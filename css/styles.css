@@ -384,15 +384,19 @@ textarea {
     serif;
 
   font-size:
-    clamp(4rem, 11vw, 8.5rem);
+    clamp(4rem, 8vw, 7rem);
 
-  line-height: 0.85;
-  letter-spacing: -0.065em;
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+
+  color: var(--white);
+  text-transform: uppercase;
+  white-space: nowrap;
 
   text-shadow:
-    0 5px 30px rgba(0, 0, 0, 0.4);
+    0 4px 18px rgba(0, 0, 0, 0.5);
 }
-
 .hero-subtitle {
   margin-bottom: 34px;
 
