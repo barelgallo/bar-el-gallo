@@ -59,6 +59,7 @@ html {
 
 body {
   font-family:
+    "Montserrat",
     Arial,
     Helvetica,
     sans-serif;
@@ -120,6 +121,7 @@ textarea {
   margin-bottom: 24px;
 
   font-family:
+    "Bree Serif",
     Georgia,
     "Times New Roman",
     serif;
@@ -218,7 +220,7 @@ textarea {
 
   height: var(--header-height);
 
-  background: rgba(17, 17, 17, 0.97);
+  background: var(--black);
 
   border-bottom:
     1px solid rgba(255, 255, 255, 0.08);
@@ -388,6 +390,7 @@ textarea {
   margin-bottom: 18px;
 
   font-family:
+    "Bree Serif",
     Georgia,
     "Times New Roman",
     serif;
@@ -406,6 +409,7 @@ textarea {
   margin-bottom: 34px;
 
   font-family:
+    "Bree Serif",
     Georgia,
     "Times New Roman",
     serif;
@@ -455,6 +459,7 @@ textarea {
   color: var(--black);
 
   font-family:
+    "Bree Serif",
     Georgia,
     "Times New Roman",
     serif;
@@ -630,6 +635,7 @@ textarea {
   color: var(--black);
 
   font-family:
+    "Bree Serif",
     Georgia,
     "Times New Roman",
     serif;
@@ -644,6 +650,7 @@ textarea {
   margin-bottom: 8px;
 
   font-family:
+    "Bree Serif",
     Georgia,
     "Times New Roman",
     serif;
@@ -738,6 +745,7 @@ textarea {
   margin-bottom: 28px !important;
 
   font-family:
+    "Bree Serif",
     Georgia,
     "Times New Roman",
     serif;
@@ -773,6 +781,7 @@ textarea {
   margin-bottom: 10px;
 
   font-family:
+    "Bree Serif",
     Georgia,
     "Times New Roman",
     serif;
@@ -875,6 +884,7 @@ textarea {
   margin-bottom: 6px;
 
   font-family:
+    "Bree Serif",
     Georgia,
     "Times New Roman",
     serif;
