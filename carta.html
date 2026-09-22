@@ -12,16 +12,19 @@
 
   <meta
     name="description"
-    content="Carta de Bar El Gallo en Candeleda, Ávila."
+    content="Carta de Bar El Gallo en Candeleda. Tapas, raciones, especialidades, bebidas, vinos y copas."
   >
+
+  <meta name="theme-color" content="#0b0b0b">
 
   <title>Carta | Bar El Gallo</title>
 
-  <!-- CSS PRINCIPAL DE BAR EL GALLO -->
-  <link
-    rel="stylesheet"
-    href="css/styles.css"
-  >
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/gallo_logo_16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/gallo_logo_32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/gallo_logo_64.png">  
+
+  <!-- CSS PRINCIPAL -->
+  <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
@@ -30,10 +33,10 @@
 
 
 <!-- =====================================================
-     HEADER
+     HEADER / NAVEGACIÓN
 ====================================================== -->
 
-<header class="site-header">
+<header class="site-header" id="inicio">
 
   <div class="header-container">
 
@@ -42,32 +45,61 @@
       href="index.html"
       aria-label="Bar El Gallo - Inicio"
     >
+
       <img
-        class="brand-logo"
         src="assets/images/logo_bar_el_gallo.jpg"
         alt="Bar El Gallo"
+        class="brand-logo"
       >
+
     </a>
+
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="main-nav"
+    >
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
 
 
     <nav
       class="main-nav"
+      id="main-nav"
       aria-label="Navegación principal"
     >
 
-      <a href="index.html">
-        INICIO
+      <a href="index.html">Inicio</a>
+
+      <a href="#carta">
+        Carta
       </a>
 
-      <a
-        href="carta.html"
-        aria-current="page"
-      >
-        CARTA
+      <a href="index.html#el-bar">
+        El Bar
+      </a>
+
+      <a href="index.html#terraza">
+        Terraza
+      </a>
+
+      <a href="index.html#galeria">
+        Galería
       </a>
 
       <a href="index.html#ubicacion">
-        CÓMO LLEGAR
+        Cómo llegar
+      </a>
+
+      <a href="index.html#contacto">
+        Contacto
       </a>
 
     </nav>
@@ -82,24 +114,31 @@
 
 
 <!-- =====================================================
-     PRESENTACIÓN DE LA CARTA
+     PORTADA DE LA CARTA
 ====================================================== -->
 
-<section class="menu-page-hero">
+<section
+  class="section section-bar"
+  id="carta"
+>
 
   <div class="section-container">
 
-    <p class="section-eyebrow">
-      Bar El Gallo · Candeleda
-    </p>
+    <div class="section-heading">
 
-    <h1>
-      NUESTRA CARTA
-    </h1>
+      <p class="section-eyebrow">
+        Bar El Gallo · Candeleda
+      </p>
 
-    <p>
-      Tapas, raciones y sabores para disfrutar de El Gallo.
-    </p>
+      <h2>
+        NUESTRA CARTA
+      </h2>
+
+      <p>
+        Tapas, raciones y sabores para disfrutar de El Gallo.
+      </p>
+
+    </div>
 
   </div>
 
@@ -108,43 +147,57 @@
 
 
 <!-- =====================================================
-     NAVEGACIÓN DE LA CARTA
+     CATEGORÍAS
 ====================================================== -->
 
-<nav
-  class="menu-page-nav"
-  aria-label="Secciones de la carta"
+<section
+  class="identity-strip"
+  aria-label="Categorías de la carta"
 >
 
-  <div class="section-container">
+  <div class="identity-container">
 
     <a href="#para-picar">
       Para picar
     </a>
 
+    <span class="identity-dot">•</span>
+
     <a href="#raciones">
       Raciones
     </a>
 
+    <span class="identity-dot">•</span>
+
     <a href="#especialidades">
-      Especialidades El Gallo
+      Especialidades
     </a>
+
+    <span class="identity-dot">•</span>
 
     <a href="#bocadillos">
       Bocadillos / Hamburguesas
     </a>
 
+    <span class="identity-dot">•</span>
+
     <a href="#postres">
       Postres
     </a>
+
+    <span class="identity-dot">•</span>
 
     <a href="#bebidas">
       Bebidas
     </a>
 
+    <span class="identity-dot">•</span>
+
     <a href="#vinos">
       Vinos
     </a>
+
+    <span class="identity-dot">•</span>
 
     <a href="#copas">
       Copas
@@ -152,7 +205,7 @@
 
   </div>
 
-</nav>
+</section>
 
 
 
@@ -161,22 +214,27 @@
 ====================================================== -->
 
 <section
-  class="menu-page-section"
+  class="section section-bar"
   id="para-picar"
 >
 
   <div class="section-container">
 
-    <p class="section-eyebrow">
-      Nuestra cocina
-    </p>
+    <div class="section-content">
 
-    <h2>
-      PARA PICAR
-    </h2>
+      <p class="section-eyebrow">
+        Nuestra cocina
+      </p>
 
-    <div class="menu-items">
-      <!-- Los productos se incorporarán posteriormente -->
+      <h2>
+        PARA PICAR
+      </h2>
+
+      <p>
+        Próximamente incorporaremos aquí nuestra selección
+        para compartir y abrir el apetito.
+      </p>
+
     </div>
 
   </div>
@@ -190,18 +248,26 @@
 ====================================================== -->
 
 <section
-  class="menu-page-section"
+  class="section section-terrace"
   id="raciones"
 >
 
   <div class="section-container">
 
-    <h2>
-      RACIONES
-    </h2>
+    <div class="section-content">
 
-    <div class="menu-items">
-      <!-- Los productos se incorporarán posteriormente -->
+      <p class="section-eyebrow">
+        Para compartir
+      </p>
+
+      <h2>
+        RACIONES
+      </h2>
+
+      <p>
+        Nuestra selección de raciones estará disponible próximamente.
+      </p>
+
     </div>
 
   </div>
@@ -215,18 +281,26 @@
 ====================================================== -->
 
 <section
-  class="menu-page-section"
+  class="section section-bar"
   id="especialidades"
 >
 
   <div class="section-container">
 
-    <h2>
-      ESPECIALIDADES EL GALLO
-    </h2>
+    <div class="section-content">
 
-    <div class="menu-items">
-      <!-- Los productos se incorporarán posteriormente -->
+      <p class="section-eyebrow">
+        De la casa
+      </p>
+
+      <h2>
+        ESPECIALIDADES EL GALLO
+      </h2>
+
+      <p>
+        Aquí estarán los platos con el sello propio de El Gallo.
+      </p>
+
     </div>
 
   </div>
@@ -240,18 +314,26 @@
 ====================================================== -->
 
 <section
-  class="menu-page-section"
+  class="section section-terrace"
   id="bocadillos"
 >
 
   <div class="section-container">
 
-    <h2>
-      BOCADILLOS / HAMBURGUESAS
-    </h2>
+    <div class="section-content">
 
-    <div class="menu-items">
-      <!-- Los productos se incorporarán posteriormente -->
+      <p class="section-eyebrow">
+        Para comer bien
+      </p>
+
+      <h2>
+        BOCADILLOS / HAMBURGUESAS
+      </h2>
+
+      <p>
+        Bocadillos y hamburguesas de El Gallo.
+      </p>
+
     </div>
 
   </div>
@@ -265,18 +347,26 @@
 ====================================================== -->
 
 <section
-  class="menu-page-section"
+  class="section section-bar"
   id="postres"
 >
 
   <div class="section-container">
 
-    <h2>
-      POSTRES
-    </h2>
+    <div class="section-content">
 
-    <div class="menu-items">
-      <!-- Los productos se incorporarán posteriormente -->
+      <p class="section-eyebrow">
+        Algo dulce
+      </p>
+
+      <h2>
+        POSTRES
+      </h2>
+
+      <p>
+        Nuestra selección de postres estará disponible próximamente.
+      </p>
+
     </div>
 
   </div>
@@ -290,18 +380,26 @@
 ====================================================== -->
 
 <section
-  class="menu-page-section"
+  class="section section-terrace"
   id="bebidas"
 >
 
   <div class="section-container">
 
-    <h2>
-      BEBIDAS
-    </h2>
+    <div class="section-content">
 
-    <div class="menu-items">
-      <!-- Los productos se incorporarán posteriormente -->
+      <p class="section-eyebrow">
+        Bien frías
+      </p>
+
+      <h2>
+        BEBIDAS
+      </h2>
+
+      <p>
+        Cervezas, refrescos, agua y otras bebidas.
+      </p>
+
     </div>
 
   </div>
@@ -315,18 +413,26 @@
 ====================================================== -->
 
 <section
-  class="menu-page-section"
+  class="section section-bar"
   id="vinos"
 >
 
   <div class="section-container">
 
-    <h2>
-      VINOS
-    </h2>
+    <div class="section-content">
 
-    <div class="menu-items">
-      <!-- Los productos se incorporarán posteriormente -->
+      <p class="section-eyebrow">
+        Nuestra selección
+      </p>
+
+      <h2>
+        VINOS
+      </h2>
+
+      <p>
+        Nuestra selección de vinos estará disponible próximamente.
+      </p>
+
     </div>
 
   </div>
@@ -340,18 +446,26 @@
 ====================================================== -->
 
 <section
-  class="menu-page-section"
+  class="section section-terrace"
   id="copas"
 >
 
   <div class="section-container">
 
-    <h2>
-      COPAS
-    </h2>
+    <div class="section-content">
 
-    <div class="menu-items">
-      <!-- Los productos se incorporarán posteriormente -->
+      <p class="section-eyebrow">
+        Para quedarse un rato más
+      </p>
+
+      <h2>
+        COPAS
+      </h2>
+
+      <p>
+        Combinados, licores y copas.
+      </p>
+
     </div>
 
   </div>
@@ -364,21 +478,26 @@
      INFORMACIÓN / ALÉRGENOS
 ====================================================== -->
 
-<section
-  class="menu-page-info"
-  id="alergenos"
->
+<section class="section section-contact">
 
   <div class="section-container">
 
-    <h2>
-      INFORMACIÓN Y ALÉRGENOS
-    </h2>
+    <div class="contact-block">
 
-    <p>
-      La información sobre alérgenos estará disponible
-      junto a nuestra carta.
-    </p>
+      <p class="section-eyebrow">
+        Información
+      </p>
+
+      <h2>
+        ALÉRGENOS
+      </h2>
+
+      <p>
+        Consulta con nuestro personal la información
+        relativa a ingredientes y alérgenos de nuestros platos.
+      </p>
+
+    </div>
 
   </div>
 
@@ -397,40 +516,32 @@
 
   <div class="footer-container">
 
-    <div class="footer-brand">
+    <img
+      src="assets/images/logo_bar_el_gallo.jpg"
+      alt="Bar El Gallo"
+      class="footer-logo"
+      loading="lazy"
+    >
 
-      <img
-        src="assets/images/logo_bar_el_gallo.jpg"
-        alt="Bar El Gallo"
-      >
+    <p class="footer-name">
+      BAR EL GALLO
+    </p>
 
-      <p>
-        Bar El Gallo · Candeleda · Ávila
-      </p>
+    <p>
+      Tapas · Cervezas · Amigos
+    </p>
 
-    </div>
+    <p>
+      Candeleda · Ávila
+    </p>
 
-
-    <div class="footer-links">
-
-      <a href="index.html">
-        Inicio
-      </a>
-
-      <a href="carta.html">
-        Carta
-      </a>
-
-      <a href="index.html#ubicacion">
-        Cómo llegar
-      </a>
-
-    </div>
+    <p class="footer-copy">
+      © <span id="current-year"></span> Bar El Gallo
+    </p>
 
   </div>
 
 </footer>
-
 
 </body>
 
