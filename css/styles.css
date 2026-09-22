@@ -648,9 +648,31 @@ textarea {
    10B. CARTA DIGITAL
    ========================================================= */
 
+body.carta-page .header-container {
+  justify-content: center;
+}
+
 body.carta-page .section-content h2 {
   font-size: clamp(2rem, 3.6vw, 3.4rem);
   line-height: 1;
+}
+
+@media (max-width: 950px) {
+  body.carta-page .header-container {
+    display: grid;
+    grid-template-columns: minmax(44px, 1fr) auto minmax(44px, 1fr);
+    gap: 0;
+  }
+
+  body.carta-page .brand {
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  body.carta-page .menu-toggle {
+    grid-column: 3;
+    justify-self: end;
+  }
 }
 
 
