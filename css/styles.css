@@ -870,6 +870,15 @@ button {
   color: #c5b1a2;
 }
 
+.gin-feature .wine-image {
+  background: #fff;
+}
+
+.gin-feature .wine-image img {
+  height: clamp(220px, 33vw, 360px);
+  max-width: 100%;
+}
+
 .allergens {
   background: #1b120f;
   color: #e9dac8;
