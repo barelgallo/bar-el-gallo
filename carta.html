@@ -1,549 +1,635 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--
+  BAR EL GALLO · CARTA DIGITAL
+
+  PARA EDITAR UN PLATO:
+  1. Ve a su categoría (PARA PICAR, RACIONES, etc.).
+  2. Dentro del <article class="menu-item"> correspondiente:
+     - <h3> contiene el nombre.
+     - <strong> contiene el precio.
+     - <p> contiene la descripción.
+     - <img src="..."> contiene la fotografía de ESE plato.
+  Los platos y precios actuales son solo ejemplos visuales.
+-->
+
 <html lang="es">
-
-<head>
-
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <meta
-    name="description"
-    content="Carta de Bar El Gallo en Candeleda. Tapas, raciones, especialidades, bebidas, vinos y copas."
-  >
-
-  <meta name="theme-color" content="#0b0b0b">
-
-  <title>Carta | Bar El Gallo</title>
-
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/gallo_logo_16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/gallo_logo_32.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="assets/images/gallo_logo_64.png">  
-
-<!-- CSS PRINCIPAL -->
-  
-<link rel="stylesheet" href="css/styles.css">
-
-</head>
-
-
-<body class="carta-page">
-
-
-<!-- =====================================================
-     HEADER / NAVEGACIÓN
-====================================================== -->
-
-<header class="site-header" id="inicio">
-
-  <div class="header-container">
-
-    <a
-      class="brand"
-      href="index.html"
-      aria-label="Bar El Gallo - Inicio"
-    >
-
-      <img
-        src="assets/images/logo_bar_el_gallo.jpg"
-        alt="Bar El Gallo"
-        class="brand-logo"
-      >
-
-    </a>
-
-
-    <button
-      class="menu-toggle"
-      type="button"
-      aria-label="Abrir menú"
-      aria-expanded="false"
-      aria-controls="main-nav"
-    >
-
-      <span></span>
-      <span></span>
-      <span></span>
-
-    </button>
-
-
-    <nav
-      class="main-nav"
-      id="main-nav"
-      aria-label="Navegación principal"
-    >
-
-      <a href="index.html">Inicio</a>
-
-      <a href="#carta">
-        Carta
-      </a>
-
-      <a href="index.html#el-bar">
-        El Bar
-      </a>
-
-      <a href="index.html#terraza">
-        Terraza
-      </a>
-
-      <a href="index.html#galeria">
-        Galería
-      </a>
-
-      <a href="index.html#ubicacion">
-        Cómo llegar
-      </a>
-
-      <a href="index.html#contacto">
-        Contacto
-      </a>
-
-    </nav>
-
-  </div>
-
-</header>
-
-
-
-<main>
-
-
-<!-- =====================================================
-     PORTADA DE LA CARTA
-====================================================== -->
-
-<section
-  class="section section-bar"
-  id="carta"
->
-
-  <div class="section-container">
-
-    <div class="section-heading">
-
-      <p class="section-eyebrow">
-        Bar El Gallo · Candeleda
-      </p>
-
-      <h2>
-        NUESTRA CARTA
-      </h2>
-
-      <p>
-        Tapas, raciones y sabores para disfrutar de El Gallo.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CATEGORÍAS
-====================================================== -->
-
-<section
-  class="identity-strip"
-  aria-label="Categorías de la carta"
->
-
-  <div class="identity-container">
-
-    <a href="#para-picar">
-      Para picar
-    </a>
-
-    <span class="identity-dot">•</span>
-
-    <a href="#raciones">
-      Raciones
-    </a>
-
-    <span class="identity-dot">•</span>
-
-    <a href="#especialidades">
-      Especialidades
-    </a>
-
-    <span class="identity-dot">•</span>
-
-    <a href="#bocadillos">
-      Bocadillos / Hamburguesas
-    </a>
-
-    <span class="identity-dot">•</span>
-
-    <a href="#postres">
-      Postres
-    </a>
-
-    <span class="identity-dot">•</span>
-
-    <a href="#bebidas">
-      Bebidas
-    </a>
-
-    <span class="identity-dot">•</span>
-
-    <a href="#vinos">
-      Vinos
-    </a>
-
-    <span class="identity-dot">•</span>
-
-    <a href="#copas">
-      Copas
-    </a>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PARA PICAR
-====================================================== -->
-
-<section
-  class="section section-bar"
-  id="para-picar"
->
-
-  <div class="section-container">
-
-    <div class="section-content">
-
-      <p class="section-eyebrow">
-        Nuestra cocina
-      </p>
-
-      <h2>
-        PARA PICAR
-      </h2>
-
-      <p>
-        Próximamente incorporaremos aquí nuestra selección
-        para compartir y abrir el apetito.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     RACIONES
-====================================================== -->
-
-<section
-  class="section section-terrace"
-  id="raciones"
->
-
-  <div class="section-container">
-
-    <div class="section-content">
-
-      <p class="section-eyebrow">
-        Para compartir
-      </p>
-
-      <h2>
-        RACIONES
-      </h2>
-
-      <p>
-        Nuestra selección de raciones estará disponible próximamente.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     ESPECIALIDADES EL GALLO
-====================================================== -->
-
-<section
-  class="section section-bar"
-  id="especialidades"
->
-
-  <div class="section-container">
-
-    <div class="section-content">
-
-      <p class="section-eyebrow">
-        De la casa
-      </p>
-
-      <h2>
-        ESPECIALIDADES EL GALLO
-      </h2>
-
-      <p>
-        Aquí estarán los platos con el sello propio de El Gallo.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     BOCADILLOS / HAMBURGUESAS
-====================================================== -->
-
-<section
-  class="section section-terrace"
-  id="bocadillos"
->
-
-  <div class="section-container">
-
-    <div class="section-content">
-
-      <p class="section-eyebrow">
-        Para comer bien
-      </p>
-
-      <h2>
-        BOCADILLOS / HAMBURGUESAS
-      </h2>
-
-      <p>
-        Bocadillos y hamburguesas de El Gallo.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     POSTRES
-====================================================== -->
-
-<section
-  class="section section-bar"
-  id="postres"
->
-
-  <div class="section-container">
-
-    <div class="section-content">
-
-      <p class="section-eyebrow">
-        Algo dulce
-      </p>
-
-      <h2>
-        POSTRES
-      </h2>
-
-      <p>
-        Nuestra selección de postres estará disponible próximamente.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     BEBIDAS
-====================================================== -->
-
-<section
-  class="section section-terrace"
-  id="bebidas"
->
-
-  <div class="section-container">
-
-    <div class="section-content">
-
-      <p class="section-eyebrow">
-        Bien frías
-      </p>
-
-      <h2>
-        BEBIDAS
-      </h2>
-
-      <p>
-        Cervezas, refrescos, agua y otras bebidas.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     VINOS
-====================================================== -->
-
-<section
-  class="section section-bar"
-  id="vinos"
->
-
-  <div class="section-container">
-
-    <div class="section-content">
-
-      <p class="section-eyebrow">
-        Nuestra selección
-      </p>
-
-      <h2>
-        VINOS
-      </h2>
-
-      <p>
-        Nuestra selección de vinos estará disponible próximamente.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     COPAS
-====================================================== -->
-
-<section
-  class="section section-terrace"
-  id="copas"
->
-
-  <div class="section-container">
-
-    <div class="section-content">
-
-      <p class="section-eyebrow">
-        Para quedarse un rato más
-      </p>
-
-      <h2>
-        COPAS
-      </h2>
-
-      <p>
-        Combinados, licores y copas.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     INFORMACIÓN / ALÉRGENOS
-====================================================== -->
-
-<section class="section section-contact">
-
-  <div class="section-container">
-
-    <div class="contact-block">
-
-      <p class="section-eyebrow">
-        Información
-      </p>
-
-      <h2>
-        ALÉRGENOS
-      </h2>
-
-      <p>
-        Consulta con nuestro personal la información
-        relativa a ingredientes y alérgenos de nuestros platos.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-</main>
-
-
-
-<!-- =====================================================
-     FOOTER
-====================================================== -->
-
-<footer class="site-footer">
-
-  <div class="footer-container">
-
-    <img
-      src="assets/images/logo_bar_el_gallo.jpg"
-      alt="Bar El Gallo"
-      class="footer-logo"
-      loading="lazy"
-    >
-
-    <p class="footer-name">
-      BAR EL GALLO
-    </p>
-
-    <p>
-      Tapas · Cervezas · Amigos
-    </p>
-
-    <p>
-      Candeleda · Ávila
-    </p>
-
-    <p class="footer-copy">
-      © <span id="current-year"></span> Bar El Gallo
-    </p>
-
-  </div>
-
-</footer>
-
-</body>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carta de Bar El Gallo en Candeleda. Tapas, raciones, especialidades, bebidas, vinos y copas.">
+    <meta name="theme-color" content="#20140f">
+    <title>Carta | Bar El Gallo</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/gallo_logo_16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/gallo_logo_32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/images/gallo_logo_64.png">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body class="carta-page">
+
+    <!-- ==================== HEADER / NAVEGACIÓN ==================== -->
+    <header class="site-header" id="inicio">
+      <div class="header-container">
+        <a class="brand" href="index.html" aria-label="Bar El Gallo - Inicio">
+          <img src="assets/images/logo_bar_el_gallo.jpg" alt="Bar El Gallo" class="brand-logo">
+        </a>
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a>
+          <a href="carta.html">Carta</a>
+          <a href="index.html#el-bar">El Bar</a>
+          <a href="index.html#terraza">Terraza</a>
+          <a href="index.html#galeria">Galería</a>
+          <a href="index.html#ubicacion">Cómo llegar</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+        <details class="mobile-nav">
+          <summary>Menú</summary>
+          <nav aria-label="Navegación móvil">
+            <a href="index.html">Inicio</a>
+            <a href="carta.html">Carta</a>
+            <a href="index.html#el-bar">El Bar</a>
+            <a href="index.html#terraza">Terraza</a>
+            <a href="index.html#galeria">Galería</a>
+            <a href="index.html#ubicacion">Cómo llegar</a>
+            <a href="index.html#contacto">Contacto</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+    <main>
+
+      <!-- ==================== PORTADA DE LA CARTA ==================== -->
+      <section class="carta-hero" id="carta">
+        <div class="section-container carta-hero-inner">
+          <div class="carta-hero-copy">
+            <p class="menu-kicker">Bar El Gallo · Candeleda</p>
+            <h1>
+              NUESTRA
+              <em>CARTA</em>
+            </h1>
+            <p>Tapas, raciones y sabores para disfrutar de El Gallo.</p>
+            <a class="btn btn-primary" href="#categorias">Explorar la carta ↓</a>
+          </div>
+          <div class="carta-hero-photo">
+            <img src="assets/images/plato_1.jpg" alt="Imagen provisional de la carta">
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CATEGORÍAS DE LA CARTA ==================== -->
+      <nav class="category-nav" id="categorias" aria-label="Categorías de la carta">
+        <div class="section-container category-inner">
+          <a href="#para-picar">Para picar</a>
+          <a href="#raciones">Raciones</a>
+          <a href="#especialidades">Especialidades</a>
+          <a href="#bocadillos">Bocadillos / Hamburguesas</a>
+          <a href="#postres">Postres</a>
+          <a href="#bebidas">Bebidas</a>
+          <a href="#vinos">Vinos</a>
+          <a href="#copas">Copas</a>
+        </div>
+      </nav>
+      <p class="sample-notice">VISTA DE DISEÑO · PRODUCTOS Y PRECIOS DE EJEMPLO, AÚN NO DISPONIBLES PARA PEDIR</p>
+
+      <!-- ==================== PARA PICAR ==================== -->
+      <section class="menu-section" id="para-picar">
+        <div class="section-container">
+          <div class="menu-heading">
+            <span>01 / CARTA</span>
+            <div>
+              <p class="menu-kicker">Nuestra cocina</p>
+              <h2>PARA PICAR</h2>
+              <p>Próximamente incorporaremos aquí nuestra selección para compartir y abrir el apetito.</p>
+            </div>
+          </div>
+          <div class="menu-grid">
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Croquetas de la casa</h3>
+                  <strong>8,50 €</strong>
+                </div>
+                <p>Cremosas por dentro, crujientes por fuera.</p>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Boquerones con limón</h3>
+                  <strong>9,00 €</strong>
+                </div>
+                <p>Un bocado fresco para abrir el apetito.</p>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Pico de gallo y totopos</h3>
+                  <strong>7,50 €</strong>
+                </div>
+                <p>Fresco, vivo y para compartir.</p>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Berberechos al natural</h3>
+                  <strong>12,00 €</strong>
+                </div>
+                <p>Para disfrutar sin prisas.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== RACIONES ==================== -->
+      <section class="menu-section" id="raciones">
+        <div class="section-container">
+          <div class="menu-heading">
+            <span>02 / CARTA</span>
+            <div>
+              <p class="menu-kicker">Para compartir</p>
+              <h2>RACIONES</h2>
+              <p>Nuestra selección de raciones estará disponible próximamente.</p>
+            </div>
+          </div>
+          <div class="menu-grid">
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Chipirones a la plancha</h3>
+                  <strong>14,50 €</strong>
+                </div>
+                <p>Con un toque de ajo y limón.</p>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Gambas al ajillo</h3>
+                  <strong>13,50 €</strong>
+                </div>
+                <p>Aceite aromático y pan para mojar.</p>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Patatas bravas El Gallo</h3>
+                  <strong>8,00 €</strong>
+                </div>
+                <p>Con nuestra salsa de la casa.</p>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Cigalas a la plancha</h3>
+                  <strong>18,00 €</strong>
+                </div>
+                <p>Un capricho para compartir.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== ESPECIALIDADES EL GALLO ==================== -->
+      <section class="menu-section dark" id="especialidades">
+        <div class="section-container">
+          <div class="menu-heading">
+            <span>03 / CARTA</span>
+            <div>
+              <p class="menu-kicker">De la casa</p>
+              <h2>ESPECIALIDADES EL GALLO</h2>
+              <p>Aquí estarán los platos con el sello propio de El Gallo.</p>
+            </div>
+          </div>
+          <div class="menu-grid">
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Ceviche El Gallo</h3>
+                  <strong>15,00 €</strong>
+                </div>
+                <p>Cítricos, frescor y un punto picante.</p>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Roast beef con mojo isleño</h3>
+                  <strong>16,00 €</strong>
+                </div>
+                <p>Corte fino y salsa de la casa.</p>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Brochetas de la casa</h3>
+                  <strong>14,00 €</strong>
+                </div>
+                <p>A la parrilla, para comer con calma.</p>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Hamburguesa El Gallo</h3>
+                  <strong>13,50 €</strong>
+                </div>
+                <p>Carne jugosa y salsa especial.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== BOCADILLOS / HAMBURGUESAS ==================== -->
+      <section class="menu-section" id="bocadillos">
+        <div class="section-container">
+          <div class="menu-heading">
+            <span>04 / CARTA</span>
+            <div>
+              <p class="menu-kicker">Para comer bien</p>
+              <h2>BOCADILLOS / HAMBURGUESAS</h2>
+              <p>Bocadillos y hamburguesas de El Gallo.</p>
+            </div>
+          </div>
+          <div class="menu-grid">
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Bocadillo de roast beef</h3>
+                  <strong>10,50 €</strong>
+                </div>
+                <p>Con hojas frescas y mojo isleño.</p>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Hamburguesa clásica</h3>
+                  <strong>12,50 €</strong>
+                </div>
+                <p>Queso, lechuga, tomate y patatas.</p>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Perrito de la casa</h3>
+                  <strong>8,50 €</strong>
+                </div>
+                <p>Con cebolla crujiente y salsa especial.</p>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Hamburguesa picante</h3>
+                  <strong>13,50 €</strong>
+                </div>
+                <p>Con salsa de mango verde.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== POSTRES ==================== -->
+      <section class="menu-section" id="postres">
+        <div class="section-container">
+          <div class="menu-heading">
+            <span>05 / CARTA</span>
+            <div>
+              <p class="menu-kicker">Algo dulce</p>
+              <h2>POSTRES</h2>
+              <p>Nuestra selección de postres estará disponible próximamente.</p>
+            </div>
+          </div>
+          <div class="menu-grid">
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Tarta de queso</h3>
+                  <strong>5,50 €</strong>
+                </div>
+                <p>Cremosa y hecha para compartir… o no.</p>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Brownie templado</h3>
+                  <strong>6,00 €</strong>
+                </div>
+                <p>Chocolate y helado de vainilla.</p>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Flan de la casa</h3>
+                  <strong>4,50 €</strong>
+                </div>
+                <p>El de toda la vida.</p>
+              </div>
+            </article>
+
+            <article class="menu-item">
+              <div class="menu-thumb">
+                <img src="assets/images/plato_1.jpg" alt="Fotografía provisional de la carta" loading="lazy">
+              </div>
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Copa de helado</h3>
+                  <strong>5,00 €</strong>
+                </div>
+                <p>Una pausa dulce y fresquita.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== BEBIDAS ==================== -->
+      <section class="menu-section" id="bebidas">
+        <div class="section-container">
+          <div class="menu-heading">
+            <span>06 / CARTA</span>
+            <div>
+              <p class="menu-kicker">Bien frías</p>
+              <h2>BEBIDAS</h2>
+              <p>Cervezas, refrescos, agua y otras bebidas.</p>
+            </div>
+          </div>
+          <div class="menu-grid">
+
+            <article class="menu-item simple">
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Botellín de cerveza</h3>
+                  <strong>1,80 €</strong>
+                </div>
+                <p>Bien frío.</p>
+              </div>
+            </article>
+
+            <article class="menu-item simple">
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Tercio de cerveza</h3>
+                  <strong>2,50 €</strong>
+                </div>
+                <p>El clásico para acompañar.</p>
+              </div>
+            </article>
+
+            <article class="menu-item simple">
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Refresco</h3>
+                  <strong>2,30 €</strong>
+                </div>
+                <p>Varias opciones.</p>
+              </div>
+            </article>
+
+            <article class="menu-item simple">
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Agua mineral</h3>
+                  <strong>1,80 €</strong>
+                </div>
+                <p>Con o sin gas.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== VINOS ==================== -->
+      <section class="menu-section wine-section" id="vinos">
+        <div class="section-container">
+          <div class="menu-heading">
+            <span>07 / CARTA</span>
+            <div>
+              <p class="menu-kicker">Nuestra selección</p>
+              <h2>VINOS</h2>
+              <p>Nuestra selección de vinos estará disponible próximamente.</p>
+            </div>
+          </div>
+          <div class="wine-feature">
+            <div class="wine-image">
+              <img src="assets/images/porotos_tinto.png" alt="Botella de Protos Roble" loading="lazy">
+            </div>
+            <div class="wine-copy">
+              <p class="menu-kicker">Vino de ejemplo · Ribera del Duero</p>
+              <h3>
+                Protos
+                <em>Roble</em>
+              </h3>
+              <p>Ejemplo visual de presentación. Disponibilidad, formato y precios pendientes de confirmar.</p>
+              <div class="wine-price">
+                <span>Copa · precio de ejemplo</span>
+                <strong>3,20 €</strong>
+              </div>
+              <div class="wine-price">
+                <span>Botella · precio de ejemplo</span>
+                <strong>18,00 €</strong>
+              </div>
+            </div>
+          </div>
+          <div class="menu-grid">
+
+            <article class="menu-item simple">
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Tinto joven</h3>
+                  <strong>2,70 €</strong>
+                </div>
+                <p>Referencia provisional.</p>
+              </div>
+            </article>
+
+            <article class="menu-item simple">
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Blanco de la casa</h3>
+                  <strong>2,70 €</strong>
+                </div>
+                <p>Referencia provisional.</p>
+              </div>
+            </article>
+
+            <article class="menu-item simple">
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Rosado</h3>
+                  <strong>2,80 €</strong>
+                </div>
+                <p>Referencia provisional.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== COPAS ==================== -->
+      <section class="menu-section" id="copas">
+        <div class="section-container">
+          <div class="menu-heading">
+            <span>08 / CARTA</span>
+            <div>
+              <p class="menu-kicker">Para quedarse un rato más</p>
+              <h2>COPAS</h2>
+              <p>Combinados, licores y copas.</p>
+            </div>
+          </div>
+          <div class="menu-grid">
+
+            <article class="menu-item simple">
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Gin tonic</h3>
+                  <strong>6,50 €</strong>
+                </div>
+                <p>Preparado a tu gusto.</p>
+              </div>
+            </article>
+
+            <article class="menu-item simple">
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Ron con refresco</h3>
+                  <strong>7,00 €</strong>
+                </div>
+                <p>La mezcla de siempre.</p>
+              </div>
+            </article>
+
+            <article class="menu-item simple">
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Whisky con refresco</h3>
+                  <strong>7,00 €</strong>
+                </div>
+                <p>Para una sobremesa larga.</p>
+              </div>
+            </article>
+
+            <article class="menu-item simple">
+              <div class="menu-item-copy">
+                <div class="menu-item-head">
+                  <h3>Licor de la casa</h3>
+                  <strong>3,50 €</strong>
+                </div>
+                <p>Un último brindis.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== INFORMACIÓN / ALÉRGENOS ==================== -->
+      <section class="allergens">
+        <div class="section-container">
+          <div>
+            <p class="menu-kicker">Información</p>
+            <h2>ALÉRGENOS</h2>
+          </div>
+          <p>Consulta con nuestro personal la información relativa a ingredientes y alérgenos de nuestros platos.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <img src="assets/images/logo_bar_el_gallo.jpg" alt="Bar El Gallo" class="footer-logo" loading="lazy">
+        <p class="footer-name">BAR EL GALLO</p>
+        <p>Tapas · Cervezas · Amigos</p>
+        <p>Candeleda · Ávila</p>
+        <p class="footer-copy">© 2026 Bar El Gallo</p>
+      </div>
+    </footer>
+  </body>
 </html>
