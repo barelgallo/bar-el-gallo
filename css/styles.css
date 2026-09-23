@@ -713,6 +713,14 @@ button {
   color: #ccbba7;
 }
 
+.menu-group-title {
+  margin: 32px 0 4px;
+  color: #9d6427;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .16em;
+}
+
 .menu-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
