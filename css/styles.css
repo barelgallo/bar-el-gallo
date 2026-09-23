@@ -713,12 +713,18 @@ button {
   color: #ccbba7;
 }
 
-.menu-group-title {
-  margin: 32px 0 4px;
-  color: #9d6427;
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: .16em;
+#bocadillos .menu-heading h2 {
+  font-size: clamp(1.9rem, 3.1vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -.03em;
+}
+
+#bocadillos .menu-group-title {
+  margin: 38px 0 8px;
+  color: #4a2c22;
+  font: 700 clamp(1.5rem, 2.2vw, 2rem)/1.15 Georgia, serif;
+  letter-spacing: .04em;
+  text-align: center;
 }
 
 .menu-grid {
