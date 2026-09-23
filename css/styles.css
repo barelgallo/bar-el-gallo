@@ -713,6 +713,13 @@ button {
   color: #ccbba7;
 }
 
+#especialidades .menu-heading h2 {
+  font-size: clamp(1.65rem, 3.2vw, 3.25rem);
+  line-height: 1.07;
+  letter-spacing: -.04em;
+  overflow-wrap: anywhere;
+}
+
 #bocadillos .menu-heading h2 {
   font-size: clamp(2.45rem, 4vw, 3.6rem);
   line-height: 1.05;
