@@ -967,29 +967,62 @@ button {
 .allergens {
   background: #1b120f;
   color: #e9dac8;
-  padding: 48px 0;
+  padding: 56px 0 64px;
 }
 
 .allergens .section-container {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  justify-content: space-between;
+  display: block;
 }
 
 .allergens h2 {
-  font: 700 29px Georgia,serif;
+  font: 700 32px/1.1 Georgia,serif;
   margin: 8px 0 0;
 }
 
-.allergens .section-container>p {
-  max-width: 580px;
+.allergens .allergens-intro {
+  max-width: 760px;
   line-height: 1.6;
-  margin: 0;
+  margin: 16px 0 0;
   color: #c9b7a7;
   font-size: 14px;
 }
 
+.allergens-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 0;
+}
+
+.allergens-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 1px solid rgba(233, 218, 200, .17);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .035);
+  color: #e9dac8;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.allergens-list li span {
+  flex: none;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.menu-item .menu-allergens {
+  margin-top: 10px;
+  color: #875825;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+}
 /* =========================================================
    07. TABLET · HEADER Y COLUMNAS
    ========================================================= */
