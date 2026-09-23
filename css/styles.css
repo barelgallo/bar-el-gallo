@@ -713,7 +713,6 @@ button {
   color: #ccbba7;
 }
 
-/* Carta: hamburguesas, perritos y bocadillos */
 #bocadillos .menu-heading h2 {
   font-size: clamp(1.9rem, 3.1vw, 3rem);
   line-height: 1.12;
@@ -721,76 +720,11 @@ button {
 }
 
 #bocadillos .menu-group-title {
-  margin: 30px 0 0;
-  padding: 23px 20px 13px;
-  background: #d8a45b;
-  color: #342016;
+  margin: 38px 0 8px;
+  color: #4a2c22;
   font: 700 clamp(1.5rem, 2.2vw, 2rem)/1.15 Georgia, serif;
-  letter-spacing: .03em;
+  letter-spacing: .04em;
   text-align: center;
-}
-
-#bocadillos .menu-group-title::after {
-  content: "";
-  display: block;
-  width: 54px;
-  height: 3px;
-  margin: 13px auto 0;
-  background: #b52b23;
-}
-
-#bocadillos .menu-group-title + .menu-grid {
-  padding: 0 28px 20px;
-  background: #d8a45b;
-}
-
-#bocadillos .menu-group-title + .menu-grid .menu-item {
-  border-color: rgba(52, 32, 22, .25);
-}
-
-/* Perritos: chocolate */
-#bocadillos .menu-group-title:nth-of-type(2),
-#bocadillos .menu-group-title:nth-of-type(2) + .menu-grid {
-  background: #342016;
-  color: #faf6ee;
-}
-
-#bocadillos .menu-group-title:nth-of-type(2)::after {
-  background: #d8a45b;
-}
-
-#bocadillos .menu-group-title:nth-of-type(2) + .menu-grid .menu-item {
-  border-color: rgba(250, 246, 238, .25);
-}
-
-#bocadillos .menu-group-title:nth-of-type(2) + .menu-grid .menu-item p {
-  color: #dbc7b3;
-}
-
-/* Bocadillos: rojo profundo */
-
-#bocadillos .menu-group-title:nth-of-type(3),
-#bocadillos .menu-group-title:nth-of-type(3) + .menu-grid {
-  background: #9b382d;
-  color: #faf6ee;
-}
-
-#bocadillos .menu-group-title:nth-of-type(3)::after {
-  background: #f2d39b;
-}
-
-#bocadillos .menu-group-title:nth-of-type(3) + .menu-grid .menu-item {
-  border-color: rgba(250, 246, 238, .3);
-}
-
-#bocadillos .menu-group-title:nth-of-type(3) + .menu-grid .menu-item p {
-  color: #f3d8cf;
-}
-
-@media (max-width: 650px) {
-  #bocadillos .menu-group-title + .menu-grid {
-    padding: 0 18px 14px;
-  }
 }
 
 .menu-grid {
