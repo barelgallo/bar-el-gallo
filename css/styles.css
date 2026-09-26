@@ -1396,48 +1396,22 @@ button {
 }
 
 /* =========================================================
-   09. MÓVIL PEQUEÑO · PLATOS Y BEBIDAS
+   09. MÓVIL PEQUEÑO · PLATOS
    ========================================================= */
 
 @media(max-width:360px) {
-
   .menu-thumb {
     width: 72px;
     height: 72px;
   }
-
   .menu-item h3 {
     font-size: 16px;
   }
-
   .menu-item p {
     font-size: 11px;
   }
-
   .menu-item strong {
     font-size: 13px;
-  }
-
-  .beverages-layout {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .beverage-column {
-    padding: 18px 14px 8px;
-  }
-
-  .beverage-column-heading h3 {
-    font-size: 19px;
-  }
-
-  .beverage-column .menu-thumb {
-    width: 68px;
-    height: 68px;
-  }
-
-  .beverage-placeholder .menu-item-copy {
-    padding-left: 81px;
   }
 }
 
@@ -1449,7 +1423,6 @@ button {
   html {
     scroll-behavior: auto;
   }
-
   *,*::before,*::after {
     transition: none!important;
   }
