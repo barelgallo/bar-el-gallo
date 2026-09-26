@@ -774,12 +774,12 @@ button {
   transform: scale(1.05);
 }
 
-/* Ampliación de las fotos de hamburguesas */
-#bocadillos .menu-group-title + .menu-grid .menu-thumb {
+/* Ampliación de todas las fotos de platos de la carta */
+.menu-thumb {
   cursor: zoom-in;
 }
 
-#bocadillos .menu-group-title + .menu-grid .menu-thumb:focus-visible {
+.menu-thumb:focus-visible {
   outline: 3px solid #9d6427;
   outline-offset: 4px;
 }
