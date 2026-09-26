@@ -745,6 +745,90 @@ button {
   gap: 0 38px;
 }
 
+/* =========================================================
+   BEBIDAS · DOS FAMILIAS
+   ========================================================= */
+
+.beverages-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 54px;
+  align-items: start;
+}
+
+.beverage-column {
+  position: relative;
+  padding: 24px 28px 10px;
+  border: 1px solid #8b694b38;
+  background: rgba(255,255,255,.18);
+}
+
+.beverage-column-beer {
+  border-top: 4px solid #9d6427;
+}
+
+.beverage-column-soft {
+  border-top: 4px solid #b9853d;
+}
+
+.beverage-column-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding-bottom: 18px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #89735a57;
+}
+
+.beverage-column-heading > span {
+  flex: none;
+  padding-top: 4px;
+  color: #ab783b;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .16em;
+}
+
+.beverage-column-heading p {
+  margin: 0 0 5px;
+  color: #9d6427;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.beverage-column-heading h3 {
+  margin: 0;
+  color: #3d261b;
+  font: 700 25px/1.05 Georgia,serif;
+  letter-spacing: -.02em;
+}
+
+.beverage-column .menu-item {
+  padding: 15px 0;
+}
+
+.beverage-column .menu-thumb {
+  width: 78px;
+  height: 78px;
+  border-radius: 6px;
+  background: #f1e3cf;
+}
+
+.beverage-column .menu-item h3 {
+  font-size: 18px;
+}
+
+.beverage-placeholder {
+  min-height: 84px;
+  opacity: .45;
+}
+
+.beverage-placeholder .menu-item-copy {
+  padding-left: 94px;
+}
+
 .menu-item {
   display: flex;
   align-items: center;
