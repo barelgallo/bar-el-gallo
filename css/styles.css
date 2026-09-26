@@ -954,6 +954,33 @@ button {
   color: #e4bd84;
 }
 
+/* =========================================================
+   COPAS · COMBINADOS DISPONIBLES
+   ========================================================= */
+
+.drink-mixers {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid #ad8b694f;
+}
+
+.drink-mixers span {
+  display: block;
+  margin-bottom: 8px;
+  color: #d3a86e;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.drink-mixers p {
+  margin: 0;
+  color: #c6b4a3;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
 .wine-section .menu-grid {
   margin-top: 18px;
 }
