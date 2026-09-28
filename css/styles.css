@@ -251,11 +251,87 @@ button {
   color: #e0d0c1;
 }
 
-.hero-actions {
+/* Fecha, hora y previsión bajo los botones de la portada */
+.hero-live {
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(185, 133, 61, .65);
+  color: var(--cream);
+}
+
+.hero-live-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #d7a865;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .22em;
+}
+
+.hero-live-info {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 30px;
+  align-items: baseline;
+  gap: 4px 8px;
+  font: 400 15px/1.5 Georgia, serif;
+}
+
+.hero-live-info time {
+  color: #f7f0e5;
+}
+
+.hero-live-weather {
+  color: #ead1aa;
+  white-space: nowrap;
+}
+
+.hero-live-weather[hidden],
+.hero-live-source[hidden] {
+  display: none;
+}
+
+.hero-live-separator {
+  margin-right: 8px;
+  color: #b9853d;
+}
+
+#gallo-temperature {
+  font-weight: 700;
+}
+
+#gallo-condition {
+  margin-left: 4px;
+}
+
+.hero-live-source {
+  display: inline-block;
+  margin-top: 6px;
+  color: #bda990;
+  font-size: 10px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  .hero-live {
+    margin-top: 24px;
+  }
+
+  .hero-live-info {
+    display: block;
+    font-size: 14px;
+  }
+
+  .hero-live-weather {
+    display: block;
+    margin-top: 2px;
+  }
+
+  .hero-live-separator {
+    display: none;
+  }
 }
 
 .identity-strip {
