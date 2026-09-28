@@ -275,11 +275,15 @@ button {
   flex-wrap: wrap;
   align-items: baseline;
   gap: 4px 8px;
-  font: 400 15px/1.5 Georgia, serif;
+  font: 600 14px/1.5 Arial, Helvetica, sans-serif;
+  letter-spacing: .02em;
 }
 
 .hero-live-info time {
   color: #f7f0e5;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
 }
 
 .hero-live-weather {
