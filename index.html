@@ -536,11 +536,12 @@
         }).format(ahora).replace(',', '');
 
         const hora = new Intl.DateTimeFormat('es-ES', {
-          timeZone: 'Europe/Madrid',
-          hour: '2-digit',
-          minute: '2-digit',
-          hourCycle: 'h23'
-        }).format(ahora);
+  timeZone: 'Europe/Madrid',
+  hour: '2-digit',
+  minute: '2-digit',
+  second: '2-digit',
+  hourCycle: 'h23'
+}).format(ahora);
 
         reloj.textContent = `${fecha} · ${hora}`;
         reloj.dateTime = ahora.toISOString();
@@ -555,7 +556,7 @@
   if (codigo.startsWith('cloudy')) return '☁️';
   if (codigo.startsWith('fair')) return '🌤️';
   if (codigo.includes('night')) return '🌙';
-  return '☀️';
+  return codigo.startsWith('clearsky') ? '☀️' : '🌡️';
 }
 
       function mostrarTiempo(datos) {
@@ -609,7 +610,7 @@
       }
 
       actualizarReloj();
-      setInterval(actualizarReloj, 30 * 1000);
+      setInterval(actualizarReloj, 1000);
       cargarTiempo();
     })();
   </script>
