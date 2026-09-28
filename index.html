@@ -77,9 +77,32 @@
       <h1 id="hero-title">BAR EL GALLO</h1>
       <p class="hero-subtitle">Tapas, cervezas y buenos momentos.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#carta">Ver la carta</a>
-        <a class="btn btn-secondary" href="#ubicacion">Cómo llegar</a>
-      </div>
+  <a class="btn btn-primary" href="#carta">Ver la carta</a>
+  <a class="btn btn-secondary" href="#ubicacion">Cómo llegar</a>
+</div>
+
+<div class="hero-live" aria-label="Fecha, hora y tiempo en Candeleda">
+  <span class="hero-live-label">CANDELEDA, AHORA</span>
+
+  <div class="hero-live-info">
+    <time id="gallo-local-time">Fecha y hora local</time>
+
+    <span class="hero-live-weather" id="gallo-weather" hidden>
+      <span class="hero-live-separator" aria-hidden="true">·</span>
+      <span id="gallo-temperature"></span>
+      <span id="gallo-condition"></span>
+    </span>
+  </div>
+
+  <a
+    class="hero-live-source"
+    id="gallo-weather-source"
+    href="https://www.met.no/en"
+    target="_blank"
+    rel="noopener noreferrer"
+    hidden
+  >Previsión: MET Norway</a>
+</div>
     </div>
     <div class="hero-photo"><img src="assets/images/entrada.jpg" alt="Entrada de Bar El Gallo de noche"></div>
   </div>
