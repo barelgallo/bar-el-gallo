@@ -508,7 +508,104 @@
 
     </div>
 
-  </footer>
+   </footer>
+
+  <script>
+    (() => {
+      const reloj = document.getElementById('gallo-local-time');
+      const tiempo = document.getElementById('gallo-weather');
+      const temperatura = document.getElementById('gallo-temperature');
+      const condicion = document.getElementById('gallo-condition');
+      const fuente = document.getElementById('gallo-weather-source');
+
+      function actualizarReloj() {
+        const ahora = new Date();
+
+        const fecha = new Intl.DateTimeFormat('es-ES', {
+          timeZone: 'Europe/Madrid',
+          weekday: 'short',
+          day: 'numeric',
+          month: 'short'
+        }).format(ahora).replace(',', '');
+
+        const hora = new Intl.DateTimeFormat('es-ES', {
+          timeZone: 'Europe/Madrid',
+          hour: '2-digit',
+          minute: '2-digit',
+          hourCycle: 'h23'
+        }).format(ahora);
+
+        reloj.textContent = `${fecha} · ${hora}`;
+        reloj.dateTime = ahora.toISOString();
+      }
+
+      function nombreDelTiempo(codigo) {
+        if (codigo.startsWith('clearsky')) return 'Despejado';
+        if (codigo.startsWith('fair')) return 'Buen tiempo';
+        if (codigo.startsWith('partlycloudy')) return 'Nubes y claros';
+        if (codigo.startsWith('cloudy')) return 'Nublado';
+        if (codigo.includes('thunder')) return 'Tormenta';
+        if (codigo.includes('snow')) return 'Nieve';
+        if (codigo.includes('rain') || codigo.includes('drizzle')) return 'Lluvia';
+        if (codigo.includes('fog')) return 'Niebla';
+        return 'Previsión local';
+      }
+
+      function mostrarTiempo(datos) {
+        const tramo = datos?.properties?.timeseries?.[0]?.data;
+        const grados = tramo?.instant?.details?.air_temperature;
+        if (typeof grados !== 'number') return;
+
+        const codigo = tramo.next_1_hours?.summary?.symbol_code
+          || tramo.next_6_hours?.summary?.symbol_code
+          || '';
+
+        temperatura.textContent = `${Math.round(grados)} °C`;
+        condicion.textContent = nombreDelTiempo(codigo);
+        tiempo.hidden = false;
+        fuente.hidden = false;
+      }
+
+      async function cargarTiempo() {
+        const clave = 'gallo-tiempo-candeleda-v1';
+
+        try {
+          const guardado = JSON.parse(localStorage.getItem(clave) || 'null');
+          if (guardado && guardado.hasta > Date.now()) {
+            mostrarTiempo(guardado.datos);
+            return;
+          }
+        } catch (_) {}
+
+        try {
+          const url =
+            'https://api.met.no/weatherapi/locationforecast/2.0/compact' +
+            '?lat=40.1552&lon=-5.2405';
+
+          const respuesta = await fetch(url);
+          if (!respuesta.ok) return;
+
+          const datos = await respuesta.json();
+          mostrarTiempo(datos);
+
+          const vence = Date.parse(respuesta.headers.get('Expires') || '');
+          const hasta = Number.isFinite(vence) && vence > Date.now()
+            ? vence
+            : Date.now() + 30 * 60 * 1000;
+
+          try {
+            localStorage.setItem(clave, JSON.stringify({ hasta, datos }));
+          } catch (_) {}
+        } catch (_) {
+          // Si no llega el clima, la fecha y la hora siguen visibles.
+        }
+      }
+
+      actualizarReloj();
+      setInterval(actualizarReloj, 30 * 1000);
+      cargarTiempo();
+    })();
+  </script>
 
 </body>
 </html>
