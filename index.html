@@ -89,19 +89,19 @@
 
     <span class="hero-live-weather" id="gallo-weather" hidden>
       <span class="hero-live-separator" aria-hidden="true">·</span>
+      <span id="gallo-condition" aria-hidden="true"></span>
       <span id="gallo-temperature"></span>
-      <span id="gallo-condition"></span>
     </span>
   </div>
 
   <a
     class="hero-live-source"
     id="gallo-weather-source"
-    href="https://www.met.no/en"
+    href="https://creativecommons.org/licenses/by/4.0/"
     target="_blank"
     rel="noopener noreferrer"
     hidden
-  >Previsión: MET Norway</a>
+  >Previsión: MET Norway · CC BY 4.0</a>
 </div>
     </div>
     <div class="hero-photo"><img src="assets/images/entrada.jpg" alt="Entrada de Bar El Gallo de noche"></div>
@@ -547,16 +547,16 @@
       }
 
       function nombreDelTiempo(codigo) {
-        if (codigo.startsWith('clearsky')) return 'Despejado';
-        if (codigo.startsWith('fair')) return 'Buen tiempo';
-        if (codigo.startsWith('partlycloudy')) return 'Nubes y claros';
-        if (codigo.startsWith('cloudy')) return 'Nublado';
-        if (codigo.includes('thunder')) return 'Tormenta';
-        if (codigo.includes('snow')) return 'Nieve';
-        if (codigo.includes('rain') || codigo.includes('drizzle')) return 'Lluvia';
-        if (codigo.includes('fog')) return 'Niebla';
-        return 'Previsión local';
-      }
+  if (codigo.includes('thunder')) return '⛈️';
+  if (codigo.includes('snow') || codigo.includes('sleet')) return '❄️';
+  if (codigo.includes('rain') || codigo.includes('drizzle')) return '🌧️';
+  if (codigo.includes('fog')) return '🌫️';
+  if (codigo.startsWith('partlycloudy')) return '⛅';
+  if (codigo.startsWith('cloudy')) return '☁️';
+  if (codigo.startsWith('fair')) return '🌤️';
+  if (codigo.includes('night')) return '🌙';
+  return '☀️';
+}
 
       function mostrarTiempo(datos) {
         const tramo = datos?.properties?.timeseries?.[0]?.data;
