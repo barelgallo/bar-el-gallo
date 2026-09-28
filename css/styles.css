@@ -257,34 +257,53 @@ button {
   max-width: 100%;
   margin-top: 30px;
   padding-top: 16px;
-  border-top: 1px solid rgba(185, 133, 61, .65);
+  border-top: 1px solid rgba(185, 133, 61, 0.65);
   color: var(--cream);
-}
-
-.hero-live-label {
-  display: block;
-  margin-bottom: 8px;
-  color: #d7a865;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: .22em;
 }
 
 .hero-live-info {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  align-items: baseline;
-  gap: 4px 8px;
+  gap: 4px 10px;
   font: 400 15px/1.5 Georgia, serif;
 }
 
-.hero-live-info time {
+.hero-live-place {
+  color: #d7a865;
+  font: 800 11px/1.5 Arial, sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.hero-live-part,
+.hero-live-weather {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.hero-live-bar {
+  color: #b9853d;
+}
+
+#gallo-date-long {
   color: #f7f0e5;
+}
+
+#gallo-date-short {
+  display: none;
+}
+
+#gallo-clock {
+  color: #f7f0e5;
+  font-weight: 700;
 }
 
 .hero-live-weather {
   color: #ead1aa;
-  white-space: nowrap;
 }
 
 .hero-live-weather[hidden],
@@ -292,17 +311,8 @@ button {
   display: none;
 }
 
-.hero-live-separator {
-  margin-right: 8px;
-  color: #b9853d;
-}
-
 #gallo-temperature {
   font-weight: 700;
-}
-
-#gallo-condition {
-  margin-left: 4px;
 }
 
 .hero-live-source {
@@ -314,23 +324,44 @@ button {
   text-underline-offset: 3px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .hero-live {
     margin-top: 24px;
   }
 
   .hero-live-info {
-    display: block;
+    gap: 2px 8px;
     font-size: 14px;
   }
 
-  .hero-live-weather {
-    display: block;
-    margin-top: 2px;
+  .hero-live-place {
+    flex-basis: 100%;
+    margin-bottom: 2px;
+    font-size: 13px;
+    letter-spacing: 0;
+    text-transform: none;
   }
 
-  .hero-live-separator {
+  .hero-live-bar,
+  #gallo-date-long {
     display: none;
+  }
+
+  #gallo-date-short {
+    display: inline;
+    color: #f7f0e5;
+    font-weight: 700;
+  }
+
+  .hero-live-part,
+  .hero-live-weather {
+    gap: 4px;
+  }
+
+  .hero-live-clock::before {
+    content: "·";
+    color: #b9853d;
+    margin-right: 4px;
   }
 }
 
