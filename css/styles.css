@@ -934,6 +934,34 @@ button {
   transition: transform .4s;
 }
 
+/* Solo bocadillos: fotos horizontales del mismo tamaño */
+#bocadillos .menu-thumb {
+  width: 132px;
+  height: 88px;
+}
+
+#bocadillos .menu-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 720px) {
+  #bocadillos .menu-thumb {
+    width: 108px;
+    height: 72px;
+  }
+}
+
+@media (max-width: 360px) {
+  #bocadillos .menu-thumb {
+    width: 90px;
+    height: 60px;
+  }
+}
+
 .menu-item:hover .menu-thumb img {
   transform: scale(1.05);
 }
