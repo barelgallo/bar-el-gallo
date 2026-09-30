@@ -1536,3 +1536,97 @@ button {
     transition: none!important;
   }
 }
+
+/* =========================================================
+   PRUEBA DE PALETA · SOLO PÁGINA INDEX
+   ========================================================= */
+
+.index-page {
+  --black: #292729;
+  --chocolate: #343033;
+  --chocolate-light: #494044;
+  --mustard: #c77b67;
+  --cream: #f7f1eb;
+  --sand: #eee2dc;
+  --red: #a94f43;
+  --text: #2b2728;
+  --muted: #746b68;
+}
+
+.index-page .site-header {
+  border-bottom-color: #554347;
+}
+
+.index-page .main-nav a:hover,
+.index-page .main-nav a:focus-visible,
+.index-page .main-nav a[href="index.html"] {
+  color: #e3a28f;
+}
+
+.index-page .hero h1 em {
+  color: #e3a28f !important;
+}
+
+.index-page .hero-kicker,
+.index-page .hero-live-label {
+  color: #e3a28f;
+}
+
+.index-page .hero-subtitle {
+  color: #e8ddd8;
+}
+
+.index-page .hero-live {
+  border-top-color: #c77b67a6;
+}
+
+.index-page .hero-live-separator {
+  color: #c77b67;
+}
+
+.index-page .hero-live-source {
+  color: #d9c6c0;
+}
+
+.index-page .btn-primary {
+  background: #c77b67;
+  color: #292729;
+}
+
+.index-page .btn-primary:hover {
+  background: #dc9581;
+}
+
+.index-page .btn-secondary {
+  border-color: #d49280;
+}
+
+.index-page .identity-strip {
+  background: #d99a86;
+  color: #292729;
+}
+
+.index-page .identity-dot {
+  color: #544044;
+}
+
+.index-page .text-link {
+  border-bottom-color: #c77b67;
+}
+
+.index-page .qr-card {
+  border-top-color: #c77b6780;
+}
+
+.index-page .qr-placeholder {
+  border-color: #d49280;
+  color: #e3a28f;
+}
+
+.index-page .contact-block {
+  border-top-color: #c77b67;
+}
+
+.index-page .site-footer {
+  background: #242225;
+}
