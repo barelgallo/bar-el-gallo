@@ -1,17 +1,18 @@
 /* =========================================================
-   00. BAR EL GALLO · ESTILO COMPARTIDO
+   00. BAR EL GALLO · PALETA COMPARTIDA INDEX Y CARTA
    ========================================================= */
 
 :root {
-  --black: #130f0d;
-  --chocolate: #291910;
-  --chocolate-light: #392218;
-  --mustard: #b9853d;
-  --cream: #f7f0e5;
-  --sand: #eee0cc;
-  --red: #b52b23;
-  --text: #241812;
-  --muted: #75675b;
+  --charcoal: #292729;
+  --charcoal-soft: #343033;
+  --charcoal-light: #494044;
+  --salmon: #c77b67;
+  --salmon-light: #e3a18f;
+  --salmon-dark: #a95345;
+  --cream: #f7f1eb;
+  --sand: #eee2dc;
+  --text: #2b2728;
+  --muted: #746b68;
   --max-width: 1160px;
 }
 
@@ -56,7 +57,7 @@ button {
   font-weight: 800;
   letter-spacing: .20em;
   text-transform: uppercase;
-  color: var(--mustard);
+  color: var(--salmon);
 }
 
 .btn {
@@ -74,16 +75,16 @@ button {
 }
 
 .btn-primary {
-  background: var(--mustard);
-  color: #1b120d;
+  background: var(--salmon);
+  color: #292729;
 }
 
 .btn-primary:hover {
-  background: #d8a45d;
+  background: #d9927f;
 }
 
 .btn-secondary {
-  border: 1px solid var(--mustard);
+  border: 1px solid var(--salmon);
   color: var(--cream);
 }
 
@@ -96,8 +97,8 @@ button {
   top: 0;
   z-index: 100;
   height: 76px;
-  background: var(--black);
-  border-bottom: 1px solid #63442f;
+  background: var(--charcoal);
+  border-bottom: 1px solid #514447;
   color: var(--cream);
 }
 
@@ -137,11 +138,11 @@ button {
 }
 
 .main-nav a:hover,.main-nav a:focus-visible {
-  color: #d5aa6c;
+  color: #e3a18f;
 }
 
 .index-page .main-nav a[href="index.html"],.carta-page .main-nav a[href="carta.html"] {
-  color: #d5aa6c;
+  color: #e3a18f;
 }
 
 .mobile-nav {
@@ -168,14 +169,14 @@ button {
   left: 0;
   right: 0;
   padding: 10px 24px 19px;
-  background: var(--black);
-  border-top: 1px solid #63442f;
+  background: var(--charcoal);
+  border-top: 1px solid #514447;
   display: grid;
 }
 
 .mobile-nav nav a {
   padding: 13px 4px;
-  border-bottom: 1px solid #ffffff1c;
+  border-bottom: 1px solid rgba(255,255,255,.12);
   font-size: 12px;
   font-weight: 800;
   letter-spacing: .09em;
@@ -187,7 +188,7 @@ button {
    ========================================================= */
 
 .index-page .hero {
-  background: var(--chocolate);
+  background: var(--charcoal-soft);
   color: var(--cream);
   overflow: hidden;
 }
@@ -225,7 +226,7 @@ button {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg,var(--chocolate),transparent 22%);
+  background: linear-gradient(90deg,var(--charcoal-soft),transparent 22%);
   pointer-events: none;
 }
 
@@ -234,7 +235,7 @@ button {
   letter-spacing: .22em;
   font-weight: 800;
   text-transform: uppercase;
-  color: #d7a865;
+  color: #e3a18f;
 }
 
 .index-page .hero h1 {
@@ -248,7 +249,7 @@ button {
   max-width: 430px;
   font-size: 18px;
   line-height: 1.55;
-  color: #e0d0c1;
+  color: #e8ddd8;
 }
 
 /* Fecha, hora y previsión bajo los botones de la portada */
@@ -257,14 +258,14 @@ button {
   max-width: 100%;
   margin-top: 30px;
   padding-top: 16px;
-  border-top: 1px solid rgba(185, 133, 61, .65);
+  border-top: 1px solid rgba(199, 123, 103, .65);
   color: var(--cream);
 }
 
 .hero-live-label {
   display: block;
   margin-bottom: 8px;
-  color: #d7a865;
+  color: #e3a18f;
   font-size: 10px;
   font-weight: 800;
   letter-spacing: .22em;
@@ -280,14 +281,14 @@ button {
 }
 
 .hero-live-info time {
-  color: #f7f0e5;
+  color: #f7f1eb;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
   font-feature-settings: "tnum" 1;
 }
 
 .hero-live-weather {
-  color: #ead1aa;
+  color: #e8d8d1;
   white-space: nowrap;
 }
 
@@ -298,7 +299,7 @@ button {
 
 .hero-live-separator {
   margin-right: 8px;
-  color: #b9853d;
+  color: #c77b67;
 }
 
 #gallo-temperature {
@@ -312,7 +313,7 @@ button {
 .hero-live-source {
   display: inline-block;
   margin-top: 6px;
-  color: #bda990;
+  color: #d4c8c3;
   font-size: 10px;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -339,8 +340,8 @@ button {
 }
 
 .identity-strip {
-  background: #ddc29d;
-  color: #2c1b13;
+  background: #d99a86;
+  color: #292729;
 }
 
 .identity-container {
@@ -358,7 +359,7 @@ button {
 }
 
 .identity-dot {
-  color: #a33e2b;
+  color: #a95345;
 }
 
 /* =========================================================
@@ -400,7 +401,7 @@ button {
 .section-image {
   position: relative;
   overflow: hidden;
-  background: var(--chocolate);
+  background: var(--charcoal-soft);
 }
 
 .section-image img {
@@ -431,7 +432,7 @@ button {
   display: inline-block;
   margin-top: 17px;
   padding-bottom: 8px;
-  border-bottom: 2px solid var(--mustard);
+  border-bottom: 2px solid var(--salmon);
   font-size: 11px;
   font-weight: 900;
   letter-spacing: .13em;
@@ -439,7 +440,7 @@ button {
 }
 
 .section-menu {
-  background: var(--chocolate);
+  background: var(--charcoal-soft);
   color: var(--cream);
 }
 
@@ -456,7 +457,7 @@ button {
 }
 
 .menu-intro p:not(.section-eyebrow) {
-  color: #d1beab;
+  color: #e0d4cf;
 }
 
 .qr-card {
@@ -465,7 +466,7 @@ button {
   display: flex;
   align-items: center;
   gap: 19px;
-  border-top: 1px solid #99795a70;
+  border-top: 1px solid rgba(167,83,69,.34);
   padding: 20px 0;
 }
 
@@ -475,8 +476,8 @@ button {
   place-items: center;
   width: 70px;
   height: 70px;
-  border: 1px solid #c7a068;
-  color: #d4a363;
+  border: 1px solid #d49280;
+  color: #e3a18f;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: .1em;
@@ -488,7 +489,7 @@ button {
 }
 
 .qr-text p {
-  color: #c9b7a5;
+  color: #d8ccc6;
   font-size: 13px;
   line-height: 1.5;
   margin: 5px 0;
@@ -522,7 +523,7 @@ button {
 .gallery-item {
   margin: 0;
   overflow: hidden;
-  background: var(--chocolate);
+  background: var(--charcoal-soft);
 }
 
 .gallery-item img {
@@ -537,7 +538,7 @@ button {
 }
 
 .section-location {
-  background: var(--chocolate);
+  background: var(--charcoal-soft);
   color: var(--cream);
 }
 
@@ -553,12 +554,12 @@ button {
 }
 
 .location-info p:not(.section-eyebrow) {
-  color: #d1beab;
+  color: #e0d4cf;
 }
 
 .map-container {
   height: 370px;
-  background: #ddd0ba;
+  background: #e3dcd8;
 }
 
 .map-container iframe {
@@ -573,7 +574,7 @@ button {
 }
 
 .contact-block {
-  border-top: 1px solid #9b7d5d;
+  border-top: 1px solid #b77362;
   padding-top: 21px;
 }
 
@@ -598,8 +599,8 @@ button {
 }
 
 .site-footer {
-  background: #100d0b;
-  color: #c3b1a0;
+  background: #242225;
+  color: #d7cbc6;
   padding: 38px 20px;
   text-align: center;
 }
@@ -635,7 +636,7 @@ button {
    ========================================================= */
 
 .carta-hero {
-  background: var(--chocolate);
+  background: var(--charcoal-soft);
   color: var(--cream);
 }
 
@@ -658,14 +659,14 @@ button {
 
 .carta-hero h1 em {
   font-weight: 400;
-  color: #d4a363;
+  color: #e3a18f;
 }
 
 .carta-hero-copy>p:not(.menu-kicker) {
   max-width: 360px;
   font-size: 16px;
   line-height: 1.55;
-  color: #ded1c2;
+  color: #e8ddd8;
   margin-bottom: 30px;
 }
 
@@ -689,7 +690,7 @@ button {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg,var(--chocolate),transparent 18%);
+  background: linear-gradient(90deg,var(--charcoal-soft),transparent 18%);
   pointer-events: none;
 }
 
@@ -697,8 +698,8 @@ button {
   position: sticky;
   top: 76px;
   z-index: 90;
-  background: #e6d5bb;
-  box-shadow: 0 5px 20px #28170f19;
+  background: #f0e4de;
+  box-shadow: 0 5px 20px rgba(41,39,41,.10);
 }
 
 .category-inner {
@@ -712,7 +713,7 @@ button {
 
 .category-inner a {
   padding: 12px 16px;
-  border: 1px solid #88674766;
+  border: 1px solid rgba(167,83,69,.30);
   border-radius: 100px;
   font-weight: 800;
   font-size: 11px;
@@ -722,7 +723,7 @@ button {
 }
 
 .category-inner a:hover,.category-inner a:focus-visible {
-  background: var(--chocolate-light);
+  background: var(--charcoal-light);
   color: white;
 }
 
@@ -730,7 +731,7 @@ button {
   margin: 0;
   padding: 12px 18px;
   text-align: center;
-  background: #9a632c;
+  background: #a95345;
   color: white;
   font-size: 10px;
   font-weight: 800;
@@ -752,7 +753,7 @@ button {
 }
 
 .menu-section.dark {
-  background: var(--chocolate)!important;
+  background: var(--charcoal-soft)!important;
   color: var(--cream);
 }
 
@@ -763,12 +764,12 @@ button {
   align-items: start;
   margin-bottom: 32px;
   padding-bottom: 23px;
-  border-bottom: 1px solid #89735a57;
+  border-bottom: 1px solid rgba(86,70,73,.30);
 }
 
 .menu-heading>span {
   padding-top: 12px;
-  color: #ab783b;
+  color: #a95345;
   font-size: 10px;
   font-weight: 900;
   letter-spacing: .18em;
@@ -791,7 +792,7 @@ button {
 }
 
 .dark .menu-heading p:last-child {
-  color: #ccbba7;
+  color: #d8ccc6;
 }
 
 #especialidades .menu-heading h2 {
@@ -808,13 +809,13 @@ button {
 }
 
 #bocadillos .menu-heading h2 em {
-  color: var(--mustard);
+  color: var(--salmon);
   font-weight: 400;
 }
 
 #bocadillos .menu-group-title {
   margin: 38px 0 8px;
-  color: #4a2c22;
+  color: #302b2d;
   font: 700 clamp(1.45rem, 2vw, 1.75rem)/1.15 Georgia, serif;
   letter-spacing: .04em;
   text-align: center;
@@ -840,16 +841,16 @@ button {
 .beverage-column {
   position: relative;
   padding: 24px 28px 10px;
-  border: 1px solid #8b694b38;
+  border: 1px solid rgba(86,70,73,.20);
   background: rgba(255,255,255,.18);
 }
 
 .beverage-column-beer {
-  border-top: 4px solid #9d6427;
+  border-top: 4px solid #a95345;
 }
 
 .beverage-column-soft {
-  border-top: 4px solid #b9853d;
+  border-top: 4px solid #c77b67;
 }
 
 .beverage-column-heading {
@@ -858,13 +859,13 @@ button {
   gap: 14px;
   padding-bottom: 18px;
   margin-bottom: 4px;
-  border-bottom: 1px solid #89735a57;
+  border-bottom: 1px solid rgba(86,70,73,.30);
 }
 
 .beverage-column-heading > span {
   flex: none;
   padding-top: 4px;
-  color: #ab783b;
+  color: #a95345;
   font-size: 10px;
   font-weight: 900;
   letter-spacing: .16em;
@@ -872,7 +873,7 @@ button {
 
 .beverage-column-heading p {
   margin: 0 0 5px;
-  color: #9d6427;
+  color: #a95345;
   font-size: 10px;
   font-weight: 900;
   letter-spacing: .15em;
@@ -881,7 +882,7 @@ button {
 
 .beverage-column-heading h3 {
   margin: 0;
-  color: #3d261b;
+  color: #302b2d;
   font: 700 25px/1.05 Georgia,serif;
   letter-spacing: -.02em;
 }
@@ -894,7 +895,7 @@ button {
   width: 78px;
   height: 78px;
   border-radius: 6px;
-  background: #f1e3cf;
+  background: #f3eae5;
 }
 
 .beverage-column .menu-item h3 {
@@ -915,7 +916,7 @@ button {
   align-items: center;
   gap: 17px;
   padding: 17px 0;
-  border-bottom: 1px solid #89735a42;
+  border-bottom: 1px solid rgba(86,70,73,.24);
   min-width: 0;
 }
 
@@ -924,7 +925,7 @@ button {
   width: 104px;
   height: 104px;
   overflow: hidden;
-  background: #cab18f;
+  background: #e3d6d0;
 }
 
 .menu-thumb img {
@@ -973,7 +974,7 @@ button {
 }
 
 .menu-thumb:focus-visible {
-  outline: 3px solid #9d6427;
+  outline: 3px solid #a95345;
   outline-offset: 4px;
 }
 
@@ -985,8 +986,8 @@ button {
   max-width: 94vw;
   max-height: 94vh;
   max-height: 94dvh;
-  background: #21170f;
-  color: #f7ead8;
+  background: #292729;
+  color: #f7f1eb;
   box-shadow: 0 24px 80px #0009;
 }
 
@@ -1021,8 +1022,8 @@ button {
   height: 36px;
   border: 0;
   border-radius: 50%;
-  background: #f7ead8;
-  color: #21170f;
+  background: #f7f1eb;
+  color: #292729;
   font-size: 25px;
   line-height: 1;
   cursor: pointer;
@@ -1052,7 +1053,7 @@ button {
 
 .menu-item strong {
   flex: none;
-  color: #9d6427;
+  color: #a95345;
   font-size: 15px;
   white-space: nowrap;
 }
@@ -1065,11 +1066,11 @@ button {
 }
 
 .dark .menu-item p {
-  color: #c0ae9c;
+  color: #d7cbc6;
 }
 
 .dark .menu-item strong {
-  color: #e0b678;
+  color: #e3a18f;
 }
 
 .menu-item.simple {
@@ -1081,25 +1082,25 @@ button {
    ========================================================= */
 
 .wine-section {
-  background: #342016!important;
-  color: #f3e8dc;
+  background: #343033!important;
+  color: #f7f1eb;
 }
 
 .wine-section .menu-heading p:last-child {
-  color: #c7b09b;
+  color: #d8ccc6;
 }
 
 .wine-feature {
   display: grid;
   grid-template-columns: .88fr 1.12fr;
   min-height: 420px;
-  background: #221711;
+  background: #292729;
 }
 
 .wine-image {
   display: grid;
   place-items: center;
-  background: #261810;
+  background: #2d2b2d;
   padding: 32px;
 }
 
@@ -1122,11 +1123,11 @@ button {
 
 .wine-copy h3 em {
   font-weight: 400;
-  color: #d3a86e;
+  color: #e3a18f;
 }
 
 .wine-copy>p:not(.menu-kicker) {
-  color: #c6b4a3;
+  color: #d7cbc6;
   line-height: 1.6;
   max-width: 440px;
   font-size: 14px;
@@ -1137,14 +1138,14 @@ button {
   display: flex;
   justify-content: space-between;
   gap: 15px;
-  border-top: 1px solid #ad8b694f;
+  border-top: 1px solid rgba(199,123,103,.34);
   padding: 13px 0;
   font-size: 13px;
 }
 
 .wine-price strong,.wine-section .menu-item strong {
   font-size: 17px;
-  color: #e4bd84;
+  color: #e6b4a5;
 }
 
 /* =========================================================
@@ -1154,13 +1155,13 @@ button {
 .drink-mixers {
   margin-top: 22px;
   padding-top: 16px;
-  border-top: 1px solid #ad8b694f;
+  border-top: 1px solid rgba(199,123,103,.34);
 }
 
 .drink-mixers span {
   display: block;
   margin-bottom: 8px;
-  color: #d3a86e;
+  color: #e3a18f;
   font-size: 10px;
   font-weight: 900;
   letter-spacing: .16em;
@@ -1169,7 +1170,7 @@ button {
 
 .drink-mixers p {
   margin: 0;
-  color: #c6b4a3;
+  color: #d7cbc6;
   font-size: 13px;
   line-height: 1.55;
 }
@@ -1179,11 +1180,11 @@ button {
 }
 
 .wine-section .menu-item p {
-  color: #c5b1a2;
+  color: #d7cbc6;
 }
 
 .gin-feature .wine-image {
-  background: #fff;
+  background: #f7f1eb;
 }
 
 .gin-feature .wine-image img {
@@ -1192,8 +1193,8 @@ button {
 }
 
 .allergens {
-  background: #1b120f;
-  color: #e9dac8;
+  background: #292729;
+  color: #f7f1eb;
   padding: 56px 0 64px;
 }
 
@@ -1210,7 +1211,7 @@ button {
   max-width: 760px;
   line-height: 1.6;
   margin: 16px 0 0;
-  color: #c9b7a7;
+  color: #d8ccc6;
   font-size: 14px;
 }
 
@@ -1229,10 +1230,10 @@ button {
   gap: 10px;
   min-height: 48px;
   padding: 10px 12px;
-  border: 1px solid rgba(233, 218, 200, .17);
+  border: 1px solid rgba(247, 241, 235, .17);
   border-radius: 8px;
   background: rgba(255, 255, 255, .035);
-  color: #e9dac8;
+  color: #f7f1eb;
   font-size: 13px;
   line-height: 1.35;
 }
@@ -1245,7 +1246,7 @@ button {
 
 .menu-item .menu-allergens {
   margin-top: 10px;
-  color: #875825;
+  color: #a95345;
   font-size: 12px;
   font-weight: 700;
   line-height: 1.4;
@@ -1314,7 +1315,7 @@ button {
     object-position: center 47%;
   }
   .index-page .hero-photo::after {
-    background: linear-gradient(0deg,var(--chocolate),transparent 38%);
+    background: linear-gradient(0deg,var(--charcoal-soft),transparent 38%);
   }
   .index-page .hero-copy {
     width: 100%;
@@ -1413,7 +1414,7 @@ button {
     object-position: center 58%;
   }
   .carta-hero-photo::after {
-    background: linear-gradient(0deg,var(--chocolate),transparent 45%);
+    background: linear-gradient(0deg,var(--charcoal-soft),transparent 45%);
   }
   .carta-hero-copy {
     width: 100%;
@@ -1538,95 +1539,10 @@ button {
 }
 
 /* =========================================================
-   PRUEBA DE PALETA · SOLO PÁGINA INDEX
+   11. ACENTO DE TÍTULOS · INDEX Y CARTA
    ========================================================= */
 
-.index-page {
-  --black: #292729;
-  --chocolate: #343033;
-  --chocolate-light: #494044;
-  --mustard: #c77b67;
-  --cream: #f7f1eb;
-  --sand: #eee2dc;
-  --red: #a94f43;
-  --text: #2b2728;
-  --muted: #746b68;
-}
-
-.index-page .site-header {
-  border-bottom-color: #554347;
-}
-
-.index-page .main-nav a:hover,
-.index-page .main-nav a:focus-visible,
-.index-page .main-nav a[href="index.html"] {
-  color: #e3a28f;
-}
-
-.index-page .hero h1 em {
-  color: #e3a28f !important;
-}
-
-.index-page .hero-kicker,
-.index-page .hero-live-label {
-  color: #e3a28f;
-}
-
-.index-page .hero-subtitle {
-  color: #e8ddd8;
-}
-
-.index-page .hero-live {
-  border-top-color: #c77b67a6;
-}
-
-.index-page .hero-live-separator {
-  color: #c77b67;
-}
-
-.index-page .hero-live-source {
-  color: #d9c6c0;
-}
-
-.index-page .btn-primary {
-  background: #c77b67;
-  color: #292729;
-}
-
-.index-page .btn-primary:hover {
-  background: #dc9581;
-}
-
-.index-page .btn-secondary {
-  border-color: #d49280;
-}
-
-.index-page .identity-strip {
-  background: #d99a86;
-  color: #292729;
-}
-
-.index-page .identity-dot {
-  color: #544044;
-}
-
-.index-page .text-link {
-  border-bottom-color: #c77b67;
-}
-
-.index-page .qr-card {
-  border-top-color: #c77b6780;
-}
-
-.index-page .qr-placeholder {
-  border-color: #d49280;
-  color: #e3a28f;
-}
-
-.index-page .contact-block {
-  border-top-color: #c77b67;
-}
-
-.index-page .site-footer {
-  background: #242225;
+.index-page .hero h1 em,
+.carta-page .carta-hero h1 em {
+  color: var(--salmon-light) !important;
 }
