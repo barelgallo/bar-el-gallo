@@ -465,34 +465,45 @@ button {
   grid-row: 2;
   display: flex;
   align-items: center;
-  gap: 19px;
+  gap: 22px;
   border-top: 1px solid rgba(167,83,69,.34);
-  padding: 20px 0;
+  padding: 22px 0;
 }
 
-.qr-placeholder {
+.qr-image-link {
   flex: none;
-  display: grid;
-  place-items: center;
-  width: 70px;
-  height: 70px;
-  border: 1px solid #d49280;
-  color: #e3a18f;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: .1em;
+  display: block;
+  padding: 7px;
+  background: #ffffff;
+  border: 2px solid var(--salmon);
+  border-radius: 8px;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.qr-image-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0,0,0,.22);
+}
+
+.qr-image {
+  display: block;
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
 }
 
 .qr-text strong {
   font-family: Georgia,serif;
-  font-size: 19px;
+  font-size: 21px;
+  color: var(--cream);
 }
 
 .qr-text p {
+  max-width: 300px;
   color: #d8ccc6;
   font-size: 13px;
   line-height: 1.5;
-  margin: 5px 0;
+  margin: 7px 0 0;
 }
 
 .menu-photo {
