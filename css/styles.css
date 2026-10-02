@@ -1546,3 +1546,108 @@ button {
 .carta-page .carta-hero h1 em {
   color: var(--salmon-light) !important;
 }
+
+/* =========================================================
+   12. Anuncio de inauguración de Cervecería El Gallo
+   ========================================================= */
+
+.index-page .hero-inner {
+  position: relative;
+}
+
+.index-page .hero-copy {
+  position: static;
+  z-index: auto;
+}
+
+.opening-card {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 28px;
+  width: min(410px, 45%);
+  padding: 22px 26px;
+  color: var(--cream);
+  background: #292729;
+  border: 1px solid var(--salmon);
+  border-radius: 5px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .3);
+}
+
+.opening-card-kicker {
+  margin: 0 0 8px;
+  color: var(--salmon-light);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+}
+
+.opening-card-date {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.opening-card-day {
+  color: var(--salmon);
+  font: 700 76px/.9 Georgia, serif;
+  letter-spacing: -.06em;
+}
+
+.opening-card-month {
+  display: block;
+  color: var(--cream);
+  font: 700 29px/1.1 Georgia, serif;
+  text-transform: uppercase;
+}
+
+.opening-card-weekday {
+  display: block;
+  margin-top: 6px;
+  color: var(--salmon-light);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.opening-card-divider {
+  height: 1px;
+  margin: 16px 0 13px;
+  background: var(--salmon);
+}
+
+.opening-card h2 {
+  margin: 0;
+  color: var(--cream);
+  font: 400 23px/1.2 Georgia, serif;
+}
+
+.opening-card-tagline {
+  margin: 6px 0 0;
+  color: var(--salmon-light);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+@media (max-width: 650px) {
+  .opening-card {
+    position: static;
+    width: 100%;
+    margin-top: 22px;
+    padding: 18px 20px;
+  }
+
+  .opening-card-day {
+    font-size: 64px;
+  }
+
+  .opening-card-month {
+    font-size: 25px;
+  }
+
+  .opening-card h2 {
+    font-size: 21px;
+  }
+}
