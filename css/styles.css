@@ -1563,9 +1563,9 @@ button {
 .opening-card {
   position: absolute;
   z-index: 3;
-  right: 0;
-  bottom: 28px;
-  width: min(410px, 45%);
+  right: 8%;
+  bottom: 100px;
+  width: min(390px, 42%);
   padding: 22px 26px;
   color: var(--cream);
   background: #292729;
