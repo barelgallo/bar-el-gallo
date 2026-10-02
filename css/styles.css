@@ -1670,3 +1670,9 @@ button {
     animation: none;
   }
 }
+
+/* Fotos completas solo en TAPAS */
+#para-picar .menu-thumb img {
+  object-fit: contain;
+  object-position: center;
+}
