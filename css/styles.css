@@ -832,6 +832,11 @@ button {
   text-align: center;
 }
 
+.menu-group-title--left {
+  text-align: left;
+  margin-left: 0;
+}
+
 .menu-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
