@@ -6,7 +6,7 @@
   1. Ve a su categoría (PARA PICAR, RACIONES, etc.).
   2. Dentro del <article class="menu-item"> correspondiente:
      - <h3> contiene el nombre.
-     - <strong> contiene el precio.
+     - <strong> contieaprecio.
      - <p> contiene la descripción.
      - <img src="..."> contiene la fotografía de ESE plato.
   Los platos y precios actuales son solo ejemplos visuales.
@@ -27,8 +27,11 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <style>
-      .menu-thumb { position: relative; flex: 0 0 104px; width: 104px; height: 104px; overflow: hidden; }
-      .menu-thumb img { display: block; width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: center; }
+      [aria-disabled="true"] { display: none !important; }
+      .menu-thumb { position: relative; flex: 0 0 104px; width: 104px; height: 104px; overflow: hidden; background: #f7f1eb; }
+      .menu-thumb img { display: block; width: 100% !important; height: 100% !important; max-width: none !important; object-fit: contain !important; object-position: center !important; transform: none !important; }
+      .menu-item:hover .menu-thumb img { transform: none !important; }
+      #bocadillos .menu-thumb img { object-fit: contain !important; object-position: center !important; }
       .menu-item-head { align-items: flex-start; min-width: 0; }
       .menu-item h3 { min-width: 0; flex: 1; font-size: clamp(15px, 1.25vw, 17px); line-height: 1.18; overflow-wrap: break-word; }
       .menu-heading h2 { font-size: clamp(1.9rem, 3vw, 2.6rem); line-height: 1.08; }
@@ -39,10 +42,6 @@
         .menu-heading h2 { font-size: clamp(1.8rem, 8vw, 2.3rem); }
       }
     </style>
-
-    <style>[aria-disabled="true"] { display: none !important; }</style>
-
-
   </head>
   <body class="carta-page">
 
@@ -100,83 +99,76 @@
       <!-- ==================== CATEGORÍAS DE LA CARTA ==================== -->
       <nav class="category-nav" id="categorias" aria-label="Categorías de la carta">
         <div class="section-container category-inner">
-          <a href="#para-picar">Tapas</a>
-          <a href="#raciones">Raciones</a>
-          <a href="#especialidades">Combinados</a>
-          <a href="#hamburguesas">Hamburguesas</a>
-          <a href="#perritos">Perritos</a>
-          <a href="#bocadillos">Bocadillos</a>
+          <a href="#para-picar">Para empezar</a>
+          <a href="#especialidades">Comida de la casa</a>
+          <a href="#bocadillos">Entre panes</a>
+          <a href="#postres">Postres</a>
           <a href="#bebidas">Bebidas</a>
           <a href="#vinos">Vinos</a>
           <a href="#copas">Copas</a>
         </div>
       </nav>
-      <p class="sample-notice">TAPAS, RACIONES, PLATOS, BOCADILLOS Y BEBIDAS</p>
-<!-- ==================== TAPAS ==================== -->
+      <p class="sample-notice">TAPAS · RACIONES · COMBINADOS · ENTRE PANES</p>
+<!-- ==================== PARA EMPEZAR · TAPAS Y RACIONES ==================== -->
 <section class="menu-section" id="para-picar">
   <div class="section-container">
-    <div class="menu-heading"><span>01 / CARTA</span><div><p class="menu-kicker">Nuestra cocina</p><h2>TAPAS</h2><p>Tapas de nuestra selección para compartir y abrir el apetito.</p></div></div>
+    <div class="menu-heading"><span>01 / CARTA</span><div><p class="menu-kicker">Tapas y raciones</p><h2>PARA EMPEZAR</h2><p>Sabores de nuestra cocina para compartir.</p></div></div>
+    <h3 class="menu-group-title menu-group-title--left">TAPAS</h3>
     <div class="menu-grid">
-      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/boquerones.jpg" alt="Boquerones en vinagreta" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Boquerones en vinagreta</h3><strong>3,00 €</strong></div><p>Boquerones, ajo, vinagre y sal.</p><p class="menu-allergens">Alérgenos identificados: 🐟 Pescado</p></div></article>
-      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/plato_1.jpg" alt="Jamón serrano con queso manchego" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Jamón Serrano con Manchego</h3><strong>3,00 €</strong></div><p>Jamón serrano y queso manchego.</p><p class="menu-allergens">Alérgenos identificados: 🥛 Leche</p></div></article>
-      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/t_moruno.jpg" alt="Pincho moruno" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Pincho Moruno</h3><strong>3,00 €</strong></div><p>Carne de cerdo con aliños de la casa.</p></div></article>
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/boquerones.jpg" alt="Boquerones en vinagreta" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Boquerones Vinagreta</h3><strong>3,00 €</strong></div><p>Boquerones, ajo, vinagre y sal.</p><p class="menu-allergens">🐟 🥜 🐚</p></div></article>
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/gambas_ajillo.jpg" alt="Gambas al ajillo" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Gambas al Ajillo</h3><strong>3,50 €</strong></div><p>Gambas, ajo, sal y perejil.</p><p class="menu-allergens">🦐 🌾</p></div></article>
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/t_moruno.jpg" alt="Pincho moruno" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Pincho Moruno</h3><strong>3,00 €</strong></div><p>Carne de cerdo con aliños de la casa.</p><p class="menu-allergens">🌾</p></div></article>
+    </div>
+    <h3 class="menu-group-title menu-group-title--left">RACIONES</h3>
+    <div class="menu-grid">
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/orejas_plancha.jpg" alt="Orejas a la plancha" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Orejas a la plancha</h3><strong>9,00 €</strong></div><p>Orejas troceadas, sal y ajo.</p><p class="menu-allergens">🌾</p></div></article>
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/gambas_ajillo.jpg" alt="Gambas al ajillo" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Gambas al Ajillo</h3><strong>7,00 €</strong></div><p>Gambas, ajo, sal y perejil.</p><p class="menu-allergens">🦐</p></div></article>
     </div>
   </div>
 </section>
 
-<!-- ==================== RACIONES ==================== -->
-<section class="menu-section" id="raciones">
-  <div class="section-container">
-    <div class="menu-heading"><span>02 / CARTA</span><div><p class="menu-kicker">Para compartir</p><h2>RACIONES</h2><p>Sabores para compartir, momentos para quedarse.</p></div></div>
-    <div class="menu-grid">
-      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/orejas_plancha.jpg" alt="Orejas a la plancha" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Orejas a la plancha</h3><strong>9,00 €</strong></div><p>Orejas troceadas, sal y ajo.</p></div></article>
-      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/gambas_ajillo.jpg" alt="Gambas al ajillo" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Gambas al Ajillo</h3><strong>4,50 €</strong></div><p>Gambas al ajillo.</p><p class="menu-allergens">Alérgenos identificados: 🦐 Crustáceos</p></div></article>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== PLATOS COMBINADOS ==================== -->
+<!-- ==================== COMIDA DE LA CASA · COMBINADOS ==================== -->
 <section class="menu-section dark" id="especialidades">
   <div class="section-container">
-    <div class="menu-heading"><span>03 / CARTA</span><div><p class="menu-kicker">A tu gusto</p><h2>PLATOS COMBINADOS</h2><p>Platos completos para disfrutar sin complicaciones.</p></div></div>
+    <div class="menu-heading"><span>02 / CARTA</span><div><p class="menu-kicker">Combinados y entre panes</p><h2>COMIDA DE LA CASA</h2><p>Platos preparados en nuestra cocina.</p></div></div>
+    <h3 class="menu-group-title menu-group-title--left">PLATOS COMBINADOS</h3>
     <div class="menu-grid">
-      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/c_pollo.jpg" alt="Pollo con champiñones y puré de patatas" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Pollo con Champiñones y Puré de Patatas</h3><strong>9,50 €</strong></div><p>Pollo, champiñones y puré de patatas.</p></div></article>
-      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/c_lomo.jpg" alt="Lomo con patatas fritas y pimiento verde asado" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Lomo con Patatas Fritas y Pimiento Verde Asado</h3><strong>9,50 €</strong></div><p>Lomo, patatas fritas y pimiento verde asado.</p></div></article>
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/c_pollo.jpg" alt="Pollo con champiñones y puré de patatas" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Pollo con champiñones y puré de patatas</h3><strong>10,00 €</strong></div><p>Pollo, champiñones y puré de patatas.</p><p class="menu-allergens">🌾 🥛</p></div></article>
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/c_lomo.jpg" alt="Lomo con patatas fritas y pimiento verde asado" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Lomo con patatas fritas y pimiento verde asado</h3><strong>10,00 €</strong></div><p>Lomo de cerdo, patatas fritas y pimiento verde asado.</p><p class="menu-allergens">🌾</p></div></article>
     </div>
+    <h3 class="menu-group-title menu-group-title--left">HAMBURGUESAS</h3>
+    <div class="menu-grid">
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/h_cabrini.jpg" alt="Hamburguesa Rulo de Cabra" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Rulo de Cabra</h3><strong>10,00 €</strong></div><p>Carne 100 % de vacuno (200 g), queso rulo de cabra y champiñones.</p><p class="menu-allergens">🌾 🥛</p></div></article>
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/h_americana.jpg" alt="Hamburguesa Americana" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Americana</h3><strong>10,00 €</strong></div><p>Carne 100 % de vacuno (200 g), queso cheddar, bacon, tomate, lechuga y cebolla.</p><p class="menu-allergens">🌾 🥛</p></div></article>
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/h_romeo_julieta.jpg" alt="Hamburguesa Romeo y Julieta" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Romeo y Julieta</h3><strong>9,00 €</strong></div><p>Carne 100 % de vacuno (200 g), rúcula y cebolla morada caramelizada.</p><p class="menu-allergens">🌾</p></div></article>
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/h_gallo.jpg" alt="Hamburguesa El Gallo" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>El Gallo</h3><strong>12,00 €</strong></div><p>Carne 100 % de vacuno (200 g), tomate, lechuga, cebolla blanca, jamón york, queso cheddar y huevo.</p><p class="menu-allergens">🌾 🥛 🍳</p></div></article>
+    </div>
+    <h3 class="menu-group-title menu-group-title--left">PERRITOS</h3>
+    <div class="menu-grid">
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/p_podenco.jpg" alt="Perrito Americano" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Americano</h3><strong>7,00 €</strong></div><p>Salchicha, queso cheddar, bacon y tres salsas.</p><p class="menu-allergens">🌾 🥛</p></div></article>
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/p_gallo.jpg" alt="Perrito Rústico" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Rústico</h3><strong>6,50 €</strong></div><p>Salchicha, cebolla frita, repollo y tres salsas.</p><p class="menu-allergens">🌾</p></div></article>
+    </div>
+    <p class="menu-allergens">Hamburguesas, perritos y bocadillos incluyen patatas fritas.</p>
   </div>
 </section>
 
-<!-- ==================== HAMBURGUESAS ==================== -->
-<section class="menu-section" id="hamburguesas">
-  <div class="section-container">
-    <div class="menu-heading"><span>04 / CARTA</span><div><p class="menu-kicker">Para comer bien</p><h2>HAMBURGUESAS</h2><p>Nuestras hamburguesas, servidas con patatas fritas.</p></div></div>
-    <div class="menu-grid">
-      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/h_americana.jpg" alt="Hamburguesa Americana" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Americana</h3><strong>10,00 €</strong></div><p>Queso cheddar, bacon, tomate, lechuga y cebolla.</p><p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche</p></div></article>
-      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/h_romeo_julieta.jpg" alt="Hamburguesa Romeo y Julieta" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Romeo y Julieta</h3><strong>9,00 €</strong></div><p>Carne de vacuno, rúcula y cebolla morada caramelizada.</p><p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten</p></div></article>
-      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/h_gallo.jpg" alt="Hamburguesa El Gallo" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>El Gallo 🐓 ⭐️</h3><strong>12,50 €</strong></div><p>Carne de vacuno, tomate, lechuga, cebolla blanca, jamón york, queso cheddar y huevo.</p><p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche · 🍳 Huevos</p></div></article>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== PERRITOS CALIENTES ==================== -->
-<section class="menu-section dark" id="perritos">
-  <div class="section-container">
-    <div class="menu-heading"><span>05 / CARTA</span><div><p class="menu-kicker">Entre panes</p><h2>PERRITOS CALIENTES</h2><p>Nuestros perritos, servidos con patatas fritas.</p></div></div>
-    <div class="menu-grid">
-      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/p_podenco.jpg" alt="Perrito Americano" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Americano</h3><strong>7,00 €</strong></div><p>Queso cheddar, bacon y tres salsas.</p><p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche</p></div></article>
-      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/p_italiano.jpg" alt="Perrito Rústico" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Rústico</h3><strong>6,50 €</strong></div><p>Cebolla frita, repollo y tres salsas.</p><p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten</p></div></article>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== BOCADILLOS ==================== -->
+<!-- ==================== ENTRE PANES · BOCADILLOS ==================== -->
 <section class="menu-section" id="bocadillos">
   <div class="section-container">
-    <div class="menu-heading"><span>06 / CARTA</span><div><p class="menu-kicker">Entre panes</p><h2>BOCADILLOS</h2><p>Nuestra selección de bocadillos, servidos con patatas fritas.</p></div></div>
+    <div class="menu-heading"><span>03 / CARTA</span><div><p class="menu-kicker">Bocadillos</p><h2>ENTRE PANES</h2><p>Nuestra selección de bocadillos.</p></div></div>
     <div class="menu-grid">
-      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/b_gallo.jpg" alt="Bocadillo El Gallo" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>El Gallo 🐓 ⭐️</h3><strong>8,00 €</strong></div><p>Jamón serrano, queso manchego, salsa de higos (mermelada) y rúcula.</p><p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche</p></div></article>
-      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/b_lomito.jpg" alt="Bocadillo Lomito" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Lomito</h3><strong>7,00 €</strong></div><p>Lomo, cebolla y pimientos verdes fritos.</p><p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten</p></div></article>
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/b_lomito.jpg" alt="Bocadillo Lomo Verde" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Lomo Verde</h3><strong>7,00 €</strong></div><p>Lomo, cebolla y pimientos verdes fritos.</p><p class="menu-allergens">🌾 🥛 🍳</p></div></article>
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/b_serranito.jpg" alt="Bocadillo El Campesino" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>El Campesino</h3><strong>8,00 €</strong></div><p>Jamón serrano con tomate rallado.</p><p class="menu-allergens">🌾 🥛 🍳</p></div></article>
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/b_gallo.jpg" alt="Bocadillo Capricho" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>Capricho</h3><strong>8,00 €</strong></div><p>Jamón serrano, salsa de higos (mermelada) y rúcula.</p><p class="menu-allergens">🌾 🥛 🍳</p></div></article>
+      <article class="menu-item"><div class="menu-thumb"><img src="assets/images/b_gallo.jpg" alt="Bocadillo El Gallo" loading="lazy"></div><div class="menu-item-copy"><div class="menu-item-head"><h3>El Gallo</h3><strong>9,00 €</strong></div><p>Jamón serrano, queso manchego, salsa de higos (mermelada) y rúcula.</p><p class="menu-allergens">🌾 🥛 🍳</p></div></article>
     </div>
+  </div>
+</section>
+
+<!-- ==================== POSTRES · PRÓXIMAMENTE ==================== -->
+<section class="menu-section dark" id="postres">
+  <div class="section-container">
+    <div class="menu-heading"><span>04 / CARTA</span><div><p class="menu-kicker">Algo dulce</p><h2>POSTRES</h2><p>Próximamente.</p></div></div>
   </div>
 </section>
 
@@ -185,7 +177,7 @@
 <section class="menu-section wine-section" id="bebidas">
   <div class="section-container">
     <div class="menu-heading">
-      <span>07 / CARTA</span>
+      <span>05 / CARTA</span>
       <div>
         <p class="menu-kicker">Para acompañar</p>
         <h2>NUESTRAS BEBIDAS</h2>
@@ -385,7 +377,7 @@
   <div class="section-container">
 
     <div class="menu-heading">
-      <span>08 / CARTA</span>
+      <span>06 / CARTA</span>
       <div>
         <p class="menu-kicker">Nuestra selección de</p>
         <h2>VINOS</h2>
@@ -524,7 +516,7 @@
 <section class="menu-section wine-section" id="copas">
   <div class="section-container">
     <div class="menu-heading">
-      <span>09 / CARTA</span>
+      <span>07 / CARTA</span>
       <div>
         <p class="menu-kicker">Nuestra selección de</p>
         <h2>COPAS</h2>
