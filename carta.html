@@ -32,15 +32,6 @@
         display: none !important;
       }
 
-      /* CARTA TEMPORAL: conservar la comida en el HTML, pero ocultarla */
-      #para-picar,
-      #raciones,
-      #especialidades,
-      #bocadillos,
-      #postres {
-        display: none !important;
-      }
-
       .temporary-food-notice {
         padding: 42px 20px;
         background: #efe7e1;
@@ -110,7 +101,7 @@
               NUESTRA
               <em>CARTA</em>
             </h1>
-            <p>Bebidas, vinos, copas y el ambiente de siempre en El Gallo.</p>
+            <p>Comidas, bebidas, vinos, copas y el ambiente de siempre en El Gallo.</p>
             <a class="btn btn-primary" href="#categorias">Explorar la carta ↓</a>
           </div>
           <div class="carta-hero-photo">
@@ -122,27 +113,15 @@
       <!-- ==================== CATEGORÍAS DE LA CARTA ==================== -->
       <nav class="category-nav" id="categorias" aria-label="Categorías de la carta">
         <div class="section-container category-inner">
-          <a href="#comida-temporal">Comidas</a>
+          <a href="#para-picar">Comidas</a>
           <a href="#bebidas">Bebidas</a>
           <a href="#vinos">Vinos</a>
           <a href="#copas">Copas</a>
         </div>
       </nav>
-      <p class="sample-notice">SERVICIO ACTUAL · BEBIDAS, VINOS Y COPAS DISPONIBLES</p>
+      <p class="sample-notice">SERVICIO DE COMIDAS · BEBIDAS · VINOS · COPAS</p>
 
-      <!-- ==================== AVISO TEMPORAL DE COCINA ==================== -->
-      <section class="temporary-food-notice" id="comida-temporal" aria-labelledby="comida-temporal-title">
-        <div class="temporary-food-notice-inner">
-          <p class="menu-kicker">Cervecería El Gallo</p>
-          <h2 id="comida-temporal-title">CARTA DE COMIDAS EN PREPARACIÓN</h2>
-          <p>Estamos reorganizando nuestra cocina.</p>
-          <p>Actualmente ofrecemos bebidas y un pincho con cada consumición, según disponibilidad.</p>
-          <p><strong>Próximamente presentaremos nuestra nueva carta.</strong></p>
-          <p>Gracias por acompañarnos en esta nueva etapa.</p>
-        </div>
-      </section>
-      
-     
+
 <!-- ==================== TAPAS ==================== -->
 
 <section class="menu-section" id="para-picar">
@@ -155,84 +134,95 @@
         <p>Tapas de nuestra selección para compartir y abrir el apetito.</p>
       </div>
     </div>
-
     <div class="menu-grid">
-
       <article class="menu-item">
         <div class="menu-thumb">
-          <img src="assets/images/boquerones.jpg" alt="Boquerones El Gallo" loading="lazy">
+          <img src="assets/images/boquerones.jpg" alt="Boquerones Vinagreta" loading="lazy">
         </div>
         <div class="menu-item-copy">
           <div class="menu-item-head">
-            <h3>Boquerones el Gallo</h3>
+            <h3>Boquerones Vinagreta</h3>
             <strong>3,00 €</strong>
           </div>
           <p>Boquerones, ajo, vinagre y sal.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🐟 Pescado</p>
+        <p class="menu-allergens">Alérgenos identificados: 🐟 Pescado · 🥜 Cacahuetes · 🐚 Moluscos</p>
         </div>
       </article>
 
       <article class="menu-item">
         <div class="menu-thumb">
-          <img src="assets/images/r_chirlas.jpg" alt="Foto provisional de chirlas en salsa" loading="lazy">
+          <img src="assets/images/t_gambas_ajillo.jpg" alt="Gambas al Ajillo" loading="lazy">
         </div>
         <div class="menu-item-copy">
           <div class="menu-item-head">
-            <h3>Chirlas en salsa</h3>
+            <h3>Gambas al Ajillo</h3>
+            <strong>3,50 €</strong>
+          </div>
+          <p>Gambas, ajo, sal y perejil.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🦐 Crustáceos · 🌾 Cereales con gluten</p>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/t_moruno.jpg" alt="Pincho Moruno" loading="lazy">
+        </div>
+        <div class="menu-item-copy">
+          <div class="menu-item-head">
+            <h3>Pincho Moruno</h3>
             <strong>3,00 €</strong>
           </div>
-          <p>Chirlas, con aliños de la casa.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🐚 Moluscos</p>
+          <p>Carne de cerdo con aliños de la casa.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten</p>
         </div>
       </article>
 
-      <article class="menu-item">
-        <div class="menu-thumb">
-          <img src="assets/images/r_tortilla_g.jpg" alt="Foto provisional de tortilla guisada" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Tortilla guisada</h3>
-            <strong>3,00 €</strong>
-          </div>
-          <p>Huevos, patatas.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🍳 Huevos</p>
-        </div>
-      </article>
-
-      <article class="menu-item">
-        <div class="menu-thumb">
-          <img src="assets/images/t_moruno.jpg" alt="Foto provisional de pincho moruno" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Pincho moruno</h3>
-            <strong>2,80 €</strong>
-          </div>
-          <p>Carne de cerdo, con aliños de la casa.</p>
-        </div>
-      </article>
-    
-
+<!-- ARTÍCULOS ANTERIORES CONSERVADOS, DESHABILITADOS Y OCULTOS -->
 <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-        <div class="menu-thumb">
-          <img src="assets/images/t_cigalas_cocidas.jpg" alt="Pajaritos de Mar" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Pajaritos de Mar</h3>
-            <strong>0,00 €</strong>
-          </div>
-          <p>Cigalas cocidas.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🦐 Crustáceos</p>
-        </div>
-      </article>
+<div class="menu-thumb">
+<img alt="Foto provisional de chirlas en salsa" loading="lazy" src="assets/images/r_chirlas.jpg"/>
 </div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Chirlas en salsa</h3>
+<strong>3,00 €</strong>
+</div>
+<p>Chirlas, con aliños de la casa.</p>
+<p class="menu-allergens">Alérgenos identificados: 🐚 Moluscos</p>
+</div>
+</article>
+<article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Foto provisional de tortilla guisada" loading="lazy" src="assets/images/r_tortilla_g.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Tortilla guisada</h3>
+<strong>3,00 €</strong>
+</div>
+<p>Huevos, patatas.</p>
+<p class="menu-allergens">Alérgenos identificados: 🍳 Huevos</p>
+</div>
+</article>
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Pajaritos de Mar" loading="lazy" src="assets/images/t_cigalas_cocidas.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Pajaritos de Mar</h3>
+<strong>0,00 €</strong>
+</div>
+<p>Cigalas cocidas.</p>
+<p class="menu-allergens">Alérgenos identificados: 🦐 Crustáceos</p>
+</div>
+</article>
+    </div>
   </div>
 </section>
-      
-     <!-- ==================== RACIONES ==================== -->
-      
+
+      <!-- ==================== RACIONES ==================== -->
+
 <section class="menu-section" id="raciones">
   <div class="section-container">
     <div class="menu-heading">
@@ -243,23 +233,7 @@
         <p>Sabores para compartir, momentos para quedarse.</p>
       </div>
     </div>
-
     <div class="menu-grid">
-
-    <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-        <div class="menu-thumb">
-          <img src="assets/images/r_berbe.jpg" alt="Foto provisional de chirlas en salsa" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Berberechos a la Sarten</h3>
-            <strong>12,00 €</strong>
-          </div>
-          <p>Berberechos, con ajo y sal.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🐚 Moluscos</p>
-        </div>
-      </article>
-      
       <article class="menu-item">
         <div class="menu-thumb">
           <img src="assets/images/orejas_plancha.jpg" alt="Orejas a la plancha" loading="lazy">
@@ -270,166 +244,184 @@
             <strong>9,00 €</strong>
           </div>
           <p>Orejas troceadas, sal y ajo.</p>
-        </div>
-      </article>
-      
-      <article class="menu-item">
-        <div class="menu-thumb">
-          <img src="assets/images/ajetes_plancha.jpg" alt="Cigalas de Campo, foto provisional" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Ajetes a la Plancha</h3>
-            <strong>6,00 €</strong>
-          </div>
-          <p>Ajetes a la plancha y sal.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten</p>
         </div>
       </article>
 
       <article class="menu-item">
         <div class="menu-thumb">
-          <img src="assets/images/boquerones.jpg" alt="Boquerones El Gallo" loading="lazy">
+          <img src="assets/images/r_gambas_ajillo.jpg" alt="Gambas al Ajillo" loading="lazy">
         </div>
         <div class="menu-item-copy">
           <div class="menu-item-head">
-            <h3>Boquerones el Gallo</h3>
-            <strong>10,00 €</strong>
-          </div>
-          <p>Boquerones, ajo, vinagre y sal.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🐟 Pescado</p>
-        </div>
-      </article>
-
-      <article class="menu-item">
-        <div class="menu-thumb">
-          <img src="assets/images/r_tortilla_g.jpg" alt="Foto provisional de tortilla guisada" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Tortilla guisada</h3>
-            <strong>10,00 €</strong>
-          </div>
-          <p>Huevos, patatas.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🍳 Huevos</p>
-        </div>
-      </article>
-
-      <article class="menu-item">
-        <div class="menu-thumb">
-          <img src="assets/images/r_chirlas.jpg" alt="Foto provisional de chirlas en salsa" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Chirlas en salsa</h3>
+            <h3>Gambas al Ajillo</h3>
             <strong>7,00 €</strong>
           </div>
-          <p>Chirlas, con aliños de la casa.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🐚 Moluscos</p>
+          <p>Gambas, ajo, sal y perejil.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🦐 Crustáceos</p>
         </div>
       </article>
 
-      <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-        <div class="menu-thumb">
-          <img src="assets/images/calamares_andaluza.jpg" alt="Calamares a la Andaluza" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Calamares a la Andaluza</h3>
-            <strong>0,00 €</strong>
-          </div>
-          <p>Calamares rebozados.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🐚 Moluscos</p>
-        </div>
-      </article>
-      
-      <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-        <div class="menu-thumb">
-          <img src="assets/images/r_croquetas_bola.jpg" alt="Croquetas El Gallo" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Croquetas El Gallo</h3>
-            <strong>0,00 €</strong>
-          </div>
-          <p>De: Gambas al ajillo o jamón..</p>
-          <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten ·<br> 🦐 Crustáceos · 🍳 Huevos </p>
-        </div>
-      </article>
-  
-      <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-        <div class="menu-thumb">
-          <img src="assets/images/cigalas_plancha.jpg" alt="Pajaritos de Mar" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Cigalitas a la Plancha</h3>
-            <strong>0,00 €</strong>
-          </div>
-          <p>Cigalas plancha.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🦐 Crustáceos</p>
-        </div>
-      </article>
-      
-      <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-        <div class="menu-thumb">
-          <img src="assets/images/r_alitas.jpg" alt="Foto provisional de alitas de pollo" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Alitas de pollo</h3>
-            <strong>0,00 €</strong>
-          </div>
-          <p>Alitas de pollo para compartir, acompañado con apio y salsa de queso azul.</p>
-        </div>
-      </article>
-      
-      <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-        <div class="menu-thumb">
-          <img src="assets/images/r_boquerones_f.jpg" alt="Foto provisional de boquerones fritos" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Boquerones fritos</h3>
-            <strong>0,00 €</strong>
-          </div>
-          <p>Boquerones fritos, recién hechos.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🐟 Pescado</p>
-        </div>
-      </article>
-
-      <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-        <div class="menu-thumb">
-          <img src="assets/images/r_huevos.jpg" alt="Foto provisional de huevos rotos" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Huevos rotos</h3>
-            <strong>0,00 €</strong>
-          </div>
-          <p>Huevos fritos, patatas, boniato, gambas al ajillo.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🍳 Huevos · 🦐 Crustáceos</p>
-        </div>
-      </article>
-
-      <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-        <div class="menu-thumb">
-          <img src="assets/images/r_asadura.jpg" alt="Foto provisional de asadurilla en salsa" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Asadurilla en Salsa</h3>
-            <strong>0,00 €</strong>
-          </div>
-          <p>Asadura Cordero, con aliños de la casa.</p>
-        </div>
-      </article>
-
+<!-- ARTÍCULOS ANTERIORES CONSERVADOS, DESHABILITADOS Y OCULTOS -->
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Foto provisional de chirlas en salsa" loading="lazy" src="assets/images/r_berbe.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Berberechos a la Sarten</h3>
+<strong>12,00 €</strong>
+</div>
+<p>Berberechos, con ajo y sal.</p>
+<p class="menu-allergens">Alérgenos identificados: 🐚 Moluscos</p>
+</div>
+</article>
+<article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Cigalas de Campo, foto provisional" loading="lazy" src="assets/images/ajetes_plancha.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Ajetes a la Plancha</h3>
+<strong>6,00 €</strong>
+</div>
+<p>Ajetes a la plancha y sal.</p>
+</div>
+</article>
+<article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Boquerones El Gallo" loading="lazy" src="assets/images/boquerones.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Boquerones el Gallo</h3>
+<strong>10,00 €</strong>
+</div>
+<p>Boquerones, ajo, vinagre y sal.</p>
+<p class="menu-allergens">Alérgenos identificados: 🐟 Pescado</p>
+</div>
+</article>
+<article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Foto provisional de tortilla guisada" loading="lazy" src="assets/images/r_tortilla_g.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Tortilla guisada</h3>
+<strong>10,00 €</strong>
+</div>
+<p>Huevos, patatas.</p>
+<p class="menu-allergens">Alérgenos identificados: 🍳 Huevos</p>
+</div>
+</article>
+<article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Foto provisional de chirlas en salsa" loading="lazy" src="assets/images/r_chirlas.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Chirlas en salsa</h3>
+<strong>7,00 €</strong>
+</div>
+<p>Chirlas, con aliños de la casa.</p>
+<p class="menu-allergens">Alérgenos identificados: 🐚 Moluscos</p>
+</div>
+</article>
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Calamares a la Andaluza" loading="lazy" src="assets/images/calamares_andaluza.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Calamares a la Andaluza</h3>
+<strong>0,00 €</strong>
+</div>
+<p>Calamares rebozados.</p>
+<p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🐚 Moluscos</p>
+</div>
+</article>
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Croquetas El Gallo" loading="lazy" src="assets/images/r_croquetas_bola.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Croquetas El Gallo</h3>
+<strong>0,00 €</strong>
+</div>
+<p>De: Gambas al ajillo o jamón..</p>
+<p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten ·<br/> 🦐 Crustáceos · 🍳 Huevos </p>
+</div>
+</article>
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Pajaritos de Mar" loading="lazy" src="assets/images/cigalas_plancha.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Cigalitas a la Plancha</h3>
+<strong>0,00 €</strong>
+</div>
+<p>Cigalas plancha.</p>
+<p class="menu-allergens">Alérgenos identificados: 🦐 Crustáceos</p>
+</div>
+</article>
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Foto provisional de alitas de pollo" loading="lazy" src="assets/images/r_alitas.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Alitas de pollo</h3>
+<strong>0,00 €</strong>
+</div>
+<p>Alitas de pollo para compartir, acompañado con apio y salsa de queso azul.</p>
+</div>
+</article>
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Foto provisional de boquerones fritos" loading="lazy" src="assets/images/r_boquerones_f.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Boquerones fritos</h3>
+<strong>0,00 €</strong>
+</div>
+<p>Boquerones fritos, recién hechos.</p>
+<p class="menu-allergens">Alérgenos identificados: 🐟 Pescado</p>
+</div>
+</article>
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Foto provisional de huevos rotos" loading="lazy" src="assets/images/r_huevos.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Huevos rotos</h3>
+<strong>0,00 €</strong>
+</div>
+<p>Huevos fritos, patatas, boniato, gambas al ajillo.</p>
+<p class="menu-allergens">Alérgenos identificados: 🍳 Huevos · 🦐 Crustáceos</p>
+</div>
+</article>
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Foto provisional de asadurilla en salsa" loading="lazy" src="assets/images/r_asadura.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Asadurilla en Salsa</h3>
+<strong>0,00 €</strong>
+</div>
+<p>Asadura Cordero, con aliños de la casa.</p>
+</div>
+</article>
     </div>
   </div>
 </section>
 
-    <!-- ==================== COMBINADOS ==================== -->
-      
+      <!-- ==================== COMBINADOS ==================== -->
+
 <section class="menu-section dark" id="especialidades">
   <div class="section-container">
     <div class="menu-heading">
@@ -440,384 +432,421 @@
         <p>Platos completos para disfrutar sin complicaciones.</p>
       </div>
     </div>
-
     <div class="menu-grid">
-
       <article class="menu-item">
         <div class="menu-thumb">
-          <img src="assets/images/c_pollo.jpg" alt="Foto provisional del combinado de pollo" loading="lazy">
+          <img src="assets/images/c_pollo.jpg" alt="Pollo con champiñones y puré de patatas" loading="lazy">
         </div>
         <div class="menu-item-copy">
           <div class="menu-item-head">
-            <h3>Pollo</h3>
-            <strong>9,50 €</strong>
+            <h3>Pollo con champiñones y puré de patatas</h3>
+            <strong>10,00 €</strong>
           </div>
-          <p>Filetes de pollo, dos huevos fritos y patatas fritas o ensalada.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🍳 Huevos</p>
-        </div>
-      </article>
-
-      <article class="menu-item">
-        <div class="menu-thumb">
-          <img src="assets/images/c_bacon.jpg" alt="Foto provisional del combinado de bacon" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Bacon</h3>
-            <strong>9,50 €</strong>
-          </div>
-          <p>Bacon, dos huevos fritos y patatas fritas o ensalada.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🍳 Huevos</p>
+          <p>Pollo, champiñones y puré de patatas.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche y derivados</p>
         </div>
       </article>
 
       <article class="menu-item">
         <div class="menu-thumb">
-          <img src="assets/images/c_lomo.jpg" alt="Foto provisional del combinado de lomo" loading="lazy">
+          <img src="assets/images/c_lomo.jpg" alt="Lomo con patatas fritas y pimiento verde asado" loading="lazy">
         </div>
         <div class="menu-item-copy">
           <div class="menu-item-head">
-            <h3>Lomo</h3>
-            <strong>9,50 €</strong>
+            <h3>Lomo con patatas fritas y pimiento verde asado</h3>
+            <strong>10,00 €</strong>
           </div>
-          <p>Lomo de cerdo, un huevos frito, pimiento frito y patatas fritas o ensalada.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🍳 Huevos</p>
+          <p>Lomo de cerdo, patatas fritas y pimiento verde asado.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten</p>
         </div>
       </article>
 
-      <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-        <div class="menu-thumb">
-          <img src="assets/images/c_ternera.jpg" alt="Foto provisional del combinado de ternera" loading="lazy">
-        </div>
-        <div class="menu-item-copy">
-          <div class="menu-item-head">
-            <h3>Ternera</h3>
-            <strong>0,00 €</strong>
-          </div>
-          <p>Filete de ternera, un huevo frito, pimiento frito y patatas fritas o ensalada.</p>
-          <p class="menu-allergens">Alérgenos identificados: 🍳 Huevos</p>
-        </div>
-      </article>
-
+<!-- ARTÍCULOS ANTERIORES CONSERVADOS, DESHABILITADOS Y OCULTOS -->
+<article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Foto provisional del combinado de bacon" loading="lazy" src="assets/images/c_bacon.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Bacon</h3>
+<strong>9,50 €</strong>
+</div>
+<p>Bacon, dos huevos fritos y patatas fritas o ensalada.</p>
+<p class="menu-allergens">Alérgenos identificados: 🍳 Huevos</p>
+</div>
+</article>
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Foto provisional del combinado de ternera" loading="lazy" src="assets/images/c_ternera.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Ternera</h3>
+<strong>0,00 €</strong>
+</div>
+<p>Filete de ternera, un huevo frito, pimiento frito y patatas fritas o ensalada.</p>
+<p class="menu-allergens">Alérgenos identificados: 🍳 Huevos</p>
+</div>
+</article>
     </div>
   </div>
 </section>
-      
+
       <!-- ==================== HAMBURGUESAS / PERRITOS / BOCADILLOS ==================== -->
-      
-      <section class="menu-section" id="bocadillos">
-        <div class="section-container">
-          <div class="menu-heading">
-            <span>04 / CARTA</span>
-            <div>
-              <p class="menu-kicker">Para comer bien</p>
-              <h2>ENTRE <em>PANES</em></h2>
-              <p>Hamburguesas, perritos y bocadillos para comer a gusto.</p>
-              <p style="color:#c77b67; font-size:0.95rem; font-weight:600;">
-               🍟 Todas nuestras hamburguesas, perritos y bocadillos incluyen patatas fritas.
-              </p>          
-            </div>
-          </div>
 
-          <h3 class="menu-group-title menu-group-title--left">HAMBURGUESAS</h3>
-          <div class="menu-grid">
-            
-            
-            <article class="menu-item">
-              <div class="menu-thumb">
-                <img src="assets/images/h_cabrini.jpg" alt="Hamburguesa Cabrini" loading="lazy">
-              </div>
-              <div class="menu-item-copy">
-                <div class="menu-item-head">
-                  <h3>Cabrini</h3>
-                  <strong>10,00 €</strong>
-                </div>
-                <p>Carne 100 % de vacuno (200 g), tomate, cebolla, lechuga,<br>rulo de cabra y bacon.</p>
-                <p class="menu-allergens">Alérgenos identificados:🌾 Cereales con gluten ·🥛 Leche</p>
-              </div>
-            </article>
-
-            <article class="menu-item">
-              <div class="menu-thumb">
-                <img src="assets/images/h_manchega.jpg" alt="Hamburguesa Manchega" loading="lazy">
-              </div>
-              <div class="menu-item-copy">
-                <div class="menu-item-head">
-                  <h3>Manchega</h3>
-                  <strong>10,00 €</strong>
-                </div>
-                <p>Carne 100 % de vacuno (200 g), tomate, cebolla, lechuga,<br>queso manchego.</p>
-                <p class="menu-allergens">Alérgenos identificados:🌾 Cereales con gluten ·🥛 Leche</p>
-              </div>
-            </article>
-
-            <article class="menu-item">
-              <div class="menu-thumb">
-                <img src="assets/images/h_romeo_julieta.jpg" alt="Hamburguesa Romero y Julieta" loading="lazy">
-              </div>
-              <div class="menu-item-copy">
-                <div class="menu-item-head">
-                  <h3>Romero y Julieta</h3>
-                  <strong>9,00 €</strong>
-                </div>
-                <p>Carne 100 % de vacuno (200 g), rúcula y<br>cebolla morada caramelizada.</p>
-              </div>
-            </article>
-
-            <article class="menu-item">
-              <div class="menu-thumb">
-                <img src="assets/images/h_gallo.jpg" alt="Hamburguesa El Gallo" loading="lazy">
-              </div>
-              <div class="menu-item-copy">
-                <div class="menu-item-head">
-                  <h3>El Gallo 🐓 ⭐️</h3>
-                  <strong>12,50 €</strong>
-                </div>
-                <p>Carne 100 % de vacuno (200 g), tomate, lechuga, cebolla blanca,<br>jamón york, queso cheddar y huevo.</p>
-                <p class="menu-allergens">Alérgenos identificados:🌾 Cereales con gluten ·🥛 Leche · 🍳 Huevos</p>
-              </div>
-            </article>
-
-            <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-              <div class="menu-thumb">
-                <img src="assets/images/h_corral.jpg" alt="Hamburguesa Corral" loading="lazy">
-              </div>
-              <div class="menu-item-copy">
-                <div class="menu-item-head">
-                  <h3>Del Corral</h3>
-                  <strong>0,00 €</strong>
-                </div>
-                <p>Carne 100 % de pollo (200 g), tomate, cebolla, lechuga,<br>queso cheddar.</p>
-                <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten ·🥛 Leche</p>
-              </div>
-            </article>   
-            
-            <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-              <div class="menu-thumb">
-                <img src="assets/images/h_americana.jpg" alt="Hamburguesa Americana" loading="lazy">
-              </div>
-              <div class="menu-item-copy">
-                <div class="menu-item-head">
-                  <h3>Americana</h3>
-                  <strong>0,00 €</strong>
-                </div>
-                <p>Carne 100 % de vacuno (200 g), tomate, cebolla, lechuga,<br>queso americano y bacon.</p>
-                <p class="menu-allergens">Alérgenos identificados:🌾 Cereales con gluten ·🥛 Leche</p>
-              </div>
-            </article>
-            
-          </div>
-
-          <h3 class="menu-group-title menu-group-title--left">PERRITOS</h3>
-          <div class="menu-grid">
-            
-            <article class="menu-item">
-              <div class="menu-thumb">
-                <img src="assets/images/p_podenco.jpg" alt="Podenco" loading="lazy">
-              </div>
-              <div class="menu-item-copy">
-                <div class="menu-item-head">
-                  <h3>Podenco</h3>
-                  <strong>6,50 €</strong>
-                </div>
-                <p>Salchicha 100 % de vacuno,<br>lechuga, tomate y queso amarillo.</p>
-                <p class="menu-allergens">Alérgenos identificados:🥛 Leche · 🌾 Cereales con gluten</p>
-              </div>
-            </article>
-
-            <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-              <div class="menu-thumb">
-                <img src="assets/images/p_gran_danes.jpg" alt="Gran Danés XL" loading="lazy">
-              </div>
-              <div class="menu-item-copy">
-                <div class="menu-item-head">
-                  <h3>Gran Danés</h3>
-                  <strong>9,00 €</strong>
-                </div>
-                <p>Pan jumbo, salchicha 100 % de vacuno tamaño grande (XL),<br>tomate,<br>lechuga, pepinillos agridulces y cebolla frita crujiente.</p>
-                <p class="menu-allergens">Alérgenos identificados:🌾 Cereales con gluten</p>
-              </div>
-            </article>
-
-            <article class="menu-item">
-              <div class="menu-thumb">
-                <img src="assets/images/p_italiano.jpg" alt="Italiano" loading="lazy">
-              </div>
-              <div class="menu-item-copy">
-                <div class="menu-item-head">
-                  <h3>Italiano</h3>
-                  <strong>7,00 €</strong>
-                </div>
-                <p>Salchicha 100 % de vacuno,<br>tomate, albahaca y queso parmesano.</p>
-                <p class="menu-allergens">Alérgenos identificados:🥛 Leche · 🌾 Cereales con gluten</p>
-              </div>
-            </article>
-
-            <article class="menu-item">
-              <div class="menu-thumb">
-                <img src="assets/images/p_gallo.jpg" alt="Gallo" loading="lazy">
-              </div>
-              <div class="menu-item-copy">
-                <div class="menu-item-head">
-                  <h3>El Gallo 🐓 ⭐️</h3>
-                  <strong>6,50 €</strong>
-                </div>
-                <p>Salchicha 100 % de pollo, repollo, cebolla, rúcula, champiñones</p>
-                <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten</p>
-              </div>
-            </article>
-          </div>
-
-   <h3 class="menu-group-title menu-group-title--left">BOCADILLOS</h3>
-<div class="menu-grid">
-  
-  <article class="menu-item">
-    <div class="menu-thumb">
-      <img src="assets/images/b_vegetal.jpg" alt="Bocadillo Vegetal, foto provisional" loading="lazy">
-    </div>
-    <div class="menu-item-copy">
-      <div class="menu-item-head">
-        <h3>Del Corral</h3>
-        <strong>7,50 €</strong>
+<section class="menu-section" id="bocadillos">
+  <div class="section-container">
+    <div class="menu-heading">
+      <span>04 / CARTA</span>
+      <div>
+        <p class="menu-kicker">Para comer bien</p>
+        <h2>ENTRE <em>PANES</em></h2>
+        <p>Hamburguesas, perritos y bocadillos para comer a gusto.</p>
+        <p style="color:#c77b67; font-size:0.95rem; font-weight:600;">
+          🍟 Todas nuestras hamburguesas, perritos y bocadillos incluyen patatas fritas.
+        </p>
       </div>
-      <p>Pollo, tomate, lechuga, cebolla, espárragos blancos, salsa alioli.</p>
-      <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🍳 Huevos</p>
     </div>
-  </article>
-
-  <article class="menu-item">
-    <div class="menu-thumb">
-      <img src="assets/images/b_lomito.jpg" alt="Bocadillo Lomito, foto provisional" loading="lazy">
-    </div>
-    <div class="menu-item-copy">
-      <div class="menu-item-head">
-        <h3>Lomito</h3>
-        <strong>7,00 €</strong>
-      </div>
-      <p>Lomo, cebolla, pimientos verdes fritos.</p>
-      <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten</p>
-    </div>
-  </article>
-
-  <article class="menu-item">
-    <div class="menu-thumb">
-      <img src="assets/images/b_gallo.jpg" alt="Bocadillo Serranito, foto provisional" loading="lazy">
-    </div>
-    <div class="menu-item-copy">
-      <div class="menu-item-head">
-        <h3>El Gallo 🐓 ⭐️</h3>
-        <strong>8,00 €</strong>
-      </div>
-      <p>Jamón serrano, queso manchego, membrillo, rúcula</p>
-      <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche</p>
-    </div>
-  </article>
-  
-  <article class="menu-item">
-    <div class="menu-thumb">
-      <img src="assets/images/b_bacon.jpg" alt="Bocadillo de bacon, foto provisional" loading="lazy">
-    </div>
-    <div class="menu-item-copy">
-      <div class="menu-item-head">
-        <h3>Bocadillo de bacon</h3>
-        <strong>6,50 €</strong>
-      </div>
-      <p>Bacon grill, queso chedar.</p>
-      <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche</p>
-    </div>
-  </article>
-
-   <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-    <div class="menu-thumb">
-      <img src="assets/images/b_calamare.jpg" alt="Bocadillo de calamares, foto provisional" loading="lazy">
-    </div>
-    <div class="menu-item-copy">
-      <div class="menu-item-head">
-        <h3>Bocadillo de calamares</h3>
-        <strong>0,00 €</strong>
-      </div>
-      <p>Calamares frescos, rebozados y limón.</p>
-      <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🐚 Moluscos</p>
-    </div>
-  </article>
-
-  <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-    <div class="menu-thumb">
-      <img src="assets/images/b_azteca.jpg" alt="Bocadillo Azteca, foto provisional" loading="lazy">
-    </div>
-    <div class="menu-item-copy">
-      <div class="menu-item-head">
-        <h3>Azteca</h3>
-        <strong>0,00 €</strong>
-      </div>
-      <p>Pollo, pochado pimientos rojos y verde, cebolla y guacamole.</p>
-      <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten</p>
-    </div>
-  </article>
-  
-   <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-    <div class="menu-thumb">
-      <img src="assets/images/b_serranito.jpg" alt="Bocadillo Serranito, foto provisional" loading="lazy">
-    </div>
-    <div class="menu-item-copy">
-      <div class="menu-item-head">
-        <h3>Serranito</h3>
-        <strong>0,00 €</strong>
-      </div>
-      <p>Ternera, jamón serrano, pimientos verdes fritos.</p>
-      <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten</p>
-    </div>
-  </article>  
-</div>
+    <h3 class="menu-group-title menu-group-title--left">HAMBURGUESAS</h3>
+    <div class="menu-grid">
+      <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/h_cabrini.jpg" alt="Rulo de Cabra" loading="lazy">
         </div>
-      </section>
+        <div class="menu-item-copy">
+          <div class="menu-item-head">
+            <h3>Rulo de Cabra</h3>
+            <strong>10,00 €</strong>
+          </div>
+          <p>Carne 100 % de vacuno (200 g), queso rulo de cabra, champiñones.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche y derivados · 🟡 Mostaza</p>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/h_americana.jpg" alt="Americana" loading="lazy">
+        </div>
+        <div class="menu-item-copy">
+          <div class="menu-item-head">
+            <h3>Americana</h3>
+            <strong>10,00 €</strong>
+          </div>
+          <p>Carne 100 % de vacuno (200 g), queso cheddar, bacon, tomate, lechuga y cebolla.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche y derivados · 🟡 Mostaza</p>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/h_romeo_julieta.jpg" alt="Romeo y Julieta" loading="lazy">
+        </div>
+        <div class="menu-item-copy">
+          <div class="menu-item-head">
+            <h3>Romeo y Julieta</h3>
+            <strong>9,00 €</strong>
+          </div>
+          <p>Carne 100 % de vacuno (200 g), rúcula y cebolla morada caramelizada.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🟡 Mostaza</p>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/h_gallo.jpg" alt="El Gallo 🐓 ⭐️" loading="lazy">
+        </div>
+        <div class="menu-item-copy">
+          <div class="menu-item-head">
+            <h3>El Gallo 🐓 ⭐️</h3>
+            <strong>12,00 €</strong>
+          </div>
+          <p>Carne 100 % de vacuno (200 g), tomate, lechuga, cebolla blanca, jamón york, queso cheddar y huevo.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche y derivados · 🟡 Mostaza</p>
+        </div>
+      </article>
+    </div>
+    <h3 class="menu-group-title menu-group-title--left">PERRITOS</h3>
+    <div class="menu-grid">
+      <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/p_americano.jpg" alt="Americano" loading="lazy">
+        </div>
+        <div class="menu-item-copy">
+          <div class="menu-item-head">
+            <h3>Americano</h3>
+            <strong>7,00 €</strong>
+          </div>
+          <p>Salchicha, queso cheddar, bacon y tres salsas.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche y derivados · 🟡 Mostaza</p>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/p_rustico.jpg" alt="Rústico" loading="lazy">
+        </div>
+        <div class="menu-item-copy">
+          <div class="menu-item-head">
+            <h3>Rústico</h3>
+            <strong>6,50 €</strong>
+          </div>
+          <p>Salchicha, cebolla frita, repollo y tres salsas.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🟡 Mostaza</p>
+        </div>
+      </article>
+    </div>
+    <h3 class="menu-group-title menu-group-title--left">BOCADILLOS</h3>
+    <div class="menu-grid">
+      <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/b_lomito.jpg" alt="Lomo Verde" loading="lazy">
+        </div>
+        <div class="menu-item-copy">
+          <div class="menu-item-head">
+            <h3>Lomo Verde</h3>
+            <strong>7,00 €</strong>
+          </div>
+          <p>Lomo, cebolla y pimientos verdes fritos.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche y derivados · 🍳 Huevos</p>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/b_campesino.jpg" alt="El Campesino" loading="lazy">
+        </div>
+        <div class="menu-item-copy">
+          <div class="menu-item-head">
+            <h3>El Campesino</h3>
+            <strong>8,00 €</strong>
+          </div>
+          <p>Jamón serrano con tomate rallado.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche y derivados · 🧪 Dióxido de azufre y sulfitos</p>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/b_capricho.jpg" alt="Capricho" loading="lazy">
+        </div>
+        <div class="menu-item-copy">
+          <div class="menu-item-head">
+            <h3>Capricho</h3>
+            <strong>8,00 €</strong>
+          </div>
+          <p>Jamón serrano, salsa de higos (mermelada) y rúcula.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche y derivados · 🧪 Dióxido de azufre y sulfitos</p>
+        </div>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/b_gallo.jpg" alt="El Gallo 🐓 ⭐️" loading="lazy">
+        </div>
+        <div class="menu-item-copy">
+          <div class="menu-item-head">
+            <h3>El Gallo 🐓 ⭐️</h3>
+            <strong>9,00 €</strong>
+          </div>
+          <p>Jamón serrano, queso manchego, salsa de higos (mermelada) y rúcula.</p>
+        <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche y derivados · 🍳 Huevos</p>
+        </div>
+      </article>
+
+<!-- ARTÍCULOS ANTERIORES CONSERVADOS, DESHABILITADOS Y OCULTOS -->
+<article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Hamburguesa Manchega" loading="lazy" src="assets/images/h_manchega.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Manchega</h3>
+<strong>10,00 €</strong>
+</div>
+<p>Carne 100 % de vacuno (200 g), tomate, cebolla, lechuga,<br/>queso manchego.</p>
+<p class="menu-allergens">Alérgenos identificados:🌾 Cereales con gluten ·🥛 Leche</p>
+</div>
+</article>
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Hamburguesa Corral" loading="lazy" src="assets/images/h_corral.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Del Corral</h3>
+<strong>0,00 €</strong>
+</div>
+<p>Carne 100 % de pollo (200 g), tomate, cebolla, lechuga,<br/>queso cheddar.</p>
+<p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten ·🥛 Leche</p>
+</div>
+</article>
+<article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Podenco" loading="lazy" src="assets/images/p_podenco.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Podenco</h3>
+<strong>6,50 €</strong>
+</div>
+<p>Salchicha 100 % de vacuno,<br/>lechuga, tomate y queso amarillo.</p>
+<p class="menu-allergens">Alérgenos identificados:🥛 Leche · 🌾 Cereales con gluten</p>
+</div>
+</article>
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Gran Danés XL" loading="lazy" src="assets/images/p_gran_danes.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Gran Danés</h3>
+<strong>9,00 €</strong>
+</div>
+<p>Pan jumbo, salchicha 100 % de vacuno tamaño grande (XL),<br/>tomate,<br/>lechuga, pepinillos agridulces y cebolla frita crujiente.</p>
+<p class="menu-allergens">Alérgenos identificados:🌾 Cereales con gluten</p>
+</div>
+</article>
+<article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Italiano" loading="lazy" src="assets/images/p_italiano.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Italiano</h3>
+<strong>7,00 €</strong>
+</div>
+<p>Salchicha 100 % de vacuno,<br/>tomate, albahaca y queso parmesano.</p>
+<p class="menu-allergens">Alérgenos identificados:🥛 Leche · 🌾 Cereales con gluten</p>
+</div>
+</article>
+<article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Gallo" loading="lazy" src="assets/images/p_gallo.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>El Gallo 🐓 ⭐️</h3>
+<strong>6,50 €</strong>
+</div>
+<p>Salchicha 100 % de pollo, repollo, cebolla, rúcula, champiñones</p>
+<p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten</p>
+</div>
+</article>
+<article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Bocadillo Vegetal, foto provisional" loading="lazy" src="assets/images/b_vegetal.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Del Corral</h3>
+<strong>7,50 €</strong>
+</div>
+<p>Pollo, tomate, lechuga, cebolla, espárragos blancos, salsa alioli.</p>
+<p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🍳 Huevos</p>
+</div>
+</article>
+<article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Bocadillo de bacon, foto provisional" loading="lazy" src="assets/images/b_bacon.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Bocadillo de bacon</h3>
+<strong>6,50 €</strong>
+</div>
+<p>Bacon grill, queso chedar.</p>
+<p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🥛 Leche</p>
+</div>
+</article>
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Bocadillo de calamares, foto provisional" loading="lazy" src="assets/images/b_calamare.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Bocadillo de calamares</h3>
+<strong>0,00 €</strong>
+</div>
+<p>Calamares frescos, rebozados y limón.</p>
+<p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🐚 Moluscos</p>
+</div>
+</article>
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Bocadillo Azteca, foto provisional" loading="lazy" src="assets/images/b_azteca.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Azteca</h3>
+<strong>0,00 €</strong>
+</div>
+<p>Pollo, pochado pimientos rojos y verde, cebolla y guacamole.</p>
+<p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten</p>
+</div>
+</article>
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Bocadillo Serranito, foto provisional" loading="lazy" src="assets/images/b_serranito.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Serranito</h3>
+<strong>0,00 €</strong>
+</div>
+<p>Ternera, jamón serrano, pimientos verdes fritos.</p>
+<p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten</p>
+</div>
+</article>
+    </div>
+  </div>
+</section>
 
       <!-- ==================== POSTRES ==================== -->
-      
-      <section class="menu-section" id="postres">
-        <div class="section-container">
-          <div class="menu-heading">
-            <span>05 / CARTA</span>
-            <div>
-              <p class="menu-kicker">Algo dulce</p>
-              <h2>POSTRES</h2>
-              <p>Nuestra selección de postres hechos en casa.</p>
-            </div>
-          </div>
-          <div class="menu-grid">
 
-            <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-              <div class="menu-thumb">
-                <img src="assets/images/cheese_cake.jpg" alt="Cheese Cake New York" loading="lazy">
-              </div>
-              <div class="menu-item-copy">
-                <div class="menu-item-head">
-                  <h3>Cheese Cake New York</h3>
-                  <strong>5,00 €</strong>
-                </div>
-                <p>Cremosa tarta de queso estilo New York</p>
-                <p class="menu-allergens">Alérgenos identificados: 🥛 Leche · 🍳 Huevos</p>
-              </div>
-            </article>
+<section class="menu-section" id="postres">
+  <div class="section-container">
+    <div class="menu-heading">
+      <span>05 / CARTA</span>
+      <div>
+        <p class="menu-kicker">Algo dulce</p>
+        <h2>POSTRES</h2>
+        <p>Próximamente.</p>
+      </div>
+    </div>
+<div class="menu-grid" aria-hidden="true">
 
-            <article class="menu-item" aria-disabled="true" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
-              <div class="menu-thumb">
-                <img src="assets/images/p_catalana.jpg" alt="Fotografía provisional de la carta" loading="lazy">
-              </div>
-              <div class="menu-item-copy">
-                <div class="menu-item-head">
-                  <h3>Crema Catalana</h3>
-                  <strong>0,00 €</strong>
-                </div>
-                <p>Una pausa dulce y con gusto.</p>
-                <p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🍳 Huevos</p>              
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+<!-- ARTÍCULOS ANTERIORES CONSERVADOS, DESHABILITADOS Y OCULTOS -->
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Cheese Cake New York" loading="lazy" src="assets/images/cheese_cake.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Cheese Cake New York</h3>
+<strong>5,00 €</strong>
+</div>
+<p>Cremosa tarta de queso estilo New York</p>
+<p class="menu-allergens">Alérgenos identificados: 🥛 Leche · 🍳 Huevos</p>
+</div>
+</article>
+<article aria-disabled="true" class="menu-item" style="opacity: 0.45; filter: grayscale(100%); pointer-events: none;">
+<div class="menu-thumb">
+<img alt="Fotografía provisional de la carta" loading="lazy" src="assets/images/p_catalana.jpg"/>
+</div>
+<div class="menu-item-copy">
+<div class="menu-item-head">
+<h3>Crema Catalana</h3>
+<strong>0,00 €</strong>
+</div>
+<p>Una pausa dulce y con gusto.</p>
+<p class="menu-allergens">Alérgenos identificados: 🌾 Cereales con gluten · 🍳 Huevos</p>
+</div>
+</article>
 
-<!-- ==================== BEBIDAS ==================== -->
+</div>
+  </div></section>
+
+      <!-- ==================== BEBIDAS ==================== -->
 
 <section class="menu-section wine-section" id="bebidas">
   <div class="section-container">
@@ -857,7 +886,7 @@
 
         <div class="wine-price">
           <span>Jarra ½ litro Amstel de barril ⭐️</span>
-          <strong>3,50 €</strong>
+          <strong>3,80 €</strong>
         </div>
 
         <div class="wine-price">
@@ -897,7 +926,7 @@
 
         <div class="wine-price">
           <span>18/70 Especial Tercio⭐️</span>
-          <strong>2,80 €</strong>
+          <strong>3,00 €</strong>
         </div> 
         
         <div class="wine-price">
@@ -907,7 +936,7 @@
         
         <div class="wine-price">
           <span>El Aguila Sin Filtrar⭐️</span>
-          <strong>2,00 €</strong>
+          <strong>2,80 €</strong>
         </div>
         
         <div class="wine-price">
@@ -1009,7 +1038,7 @@
 
         <div class="wine-price">
           <span>Sangría El Gallo ⭐️ (jarra de 1 litro)</span>
-          <strong>8,50 €</strong>
+          <strong>9,50 €</strong>
         </div>
       </div>
     </div>
@@ -1046,7 +1075,7 @@
 
         <div class="wine-price">
           <span>Protos Roble (copa)</span>
-          <strong>2,80 €</strong>
+          <strong>3,00 €</strong>
         </div>
 
         <div class="wine-price">
@@ -1056,7 +1085,7 @@
 
         <div class="wine-price">
           <span>Ramón Bilbao Crianza (copa)</span>
-          <strong>2,80 €</strong>
+          <strong>3,00 €</strong>
         </div>
 
         <div class="wine-price">
@@ -1092,7 +1121,7 @@
 
         <div class="wine-price">
           <span>Canto Real (copa)</span>
-          <strong>2,20 €</strong>
+          <strong>2,50 €</strong>
         </div>
 
         <div class="wine-price">
@@ -1102,7 +1131,7 @@
         
         <div class="wine-price">
           <span>Ramón Bilbao Blanco (copa)</span>
-          <strong>2,80 €</strong>
+          <strong>3,00 €</strong>
         </div>
 
         <div class="wine-price">
@@ -1181,12 +1210,12 @@
 
         <div class="wine-price">
           <span>DYC (combinado)</span>
-          <strong>5,00 €</strong>
+          <strong>5,50 €</strong>
         </div>
 
         <div class="wine-price">
           <span>DYC (solo)</span>
-          <strong>4,20 €</strong>
+          <strong>4,50 €</strong>
         </div>
         
         <div class="wine-price" aria-disabled="true" style="display: none;">
@@ -1233,7 +1262,7 @@
 
         <div class="wine-price">
           <span>Beefeater (combinado)</span>
-          <strong>6,00 €</strong>
+          <strong>6,50 €</strong>
         </div>
 
         <div class="wine-price">
@@ -1285,12 +1314,12 @@
          
         <div class="wine-price">
           <span>Absolut (combinado)</span>
-          <strong>5,50 €</strong>
+          <strong>6,00 €</strong>
         </div>
 
         <div class="wine-price">
           <span>Absolut (solo)</span>
-          <strong>4,70 €</strong>
+          <strong>5,00 €</strong>
         </div>
         
         <div class="drink-mixers">
@@ -1322,7 +1351,7 @@
         
         <div class="wine-price">
           <span>Brugal (combinado)</span>
-          <strong>6,00 €</strong>
+          <strong>6,50 €</strong>
         </div>
 
         <div class="wine-price">
@@ -1354,22 +1383,22 @@
 
         <div class="wine-price">
           <span>Vermut rojo (copa)</span>
-          <strong>2,80 €</strong>
-        </div>
-
-        <div class="wine-price">
-          <span>Vermut blanco (copa)</span>
-          <strong>2,80 €</strong>
-        </div>
-        
-        <div class="wine-price">
-          <span>Baileys (copa)</span>
           <strong>3,00 €</strong>
         </div>
 
         <div class="wine-price">
+          <span>Vermut blanco (copa)</span>
+          <strong>3,00 €</strong>
+        </div>
+        
+        <div class="wine-price">
+          <span>Baileys (copa)</span>
+          <strong>3,50 €</strong>
+        </div>
+
+        <div class="wine-price">
           <span>Pacharán (copa)</span>
-          <strong>2,80 €</strong>
+          <strong>3,00 €</strong>
         </div>
 
         <div class="wine-price">
@@ -1379,7 +1408,7 @@
 
         <div class="wine-price">
           <span>Crema de orujo (copa)</span>
-          <strong>2,80 €</strong>
+          <strong>3,00 €</strong>
         </div>
 
         <div class="wine-price" aria-disabled="true" style="display: none;">
