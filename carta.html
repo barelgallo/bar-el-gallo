@@ -265,13 +265,16 @@
         <h2>ENTRE <em>PANES</em></h2>
         <p>Hamburguesas, perritos, montaditos, bocadillos y tostadas para comer a gusto.</p>
         <p style="color:#c77b67; font-size:0.95rem; font-weight:600;">
-          🍟 Todas nuestras hamburguesas, perritos y bocadillos incluyen patatas fritas.
+          🍟 Todas nuestras hamburguesas y perritos incluyen patatas fritas.
         </p>
       </div>
     </div>
     <h3 class="menu-group-title menu-group-title--left">HAMBURGUESAS</h3>
     <div class="menu-grid">
       <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/h_roquefort.jpg" alt="La Roquefort" loading="lazy" onerror="this.style.visibility='hidden';">
+        </div>
         <div class="menu-item-copy">
           <div class="menu-item-head">
             <h3>La Roquefort</h3>
@@ -283,6 +286,9 @@
       </article>
 
       <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/h_suiza.jpg" alt="La Suiza" loading="lazy" onerror="this.style.visibility='hidden';">
+        </div>
         <div class="menu-item-copy">
           <div class="menu-item-head">
             <h3>La Suiza</h3>
@@ -356,6 +362,9 @@
     <h3 class="menu-group-title menu-group-title--left">MONTADITOS</h3>
     <div class="menu-grid">
       <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/m_omega3.jpg" alt="Omega 3" loading="lazy" onerror="this.style.visibility='hidden';">
+        </div>
         <div class="menu-item-copy">
           <div class="menu-item-head">
             <h3>Omega 3</h3>
@@ -367,6 +376,9 @@
       </article>
 
       <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/m_don_quijote.jpg" alt="Don Quijote" loading="lazy" onerror="this.style.visibility='hidden';">
+        </div>
         <div class="menu-item-copy">
           <div class="menu-item-head">
             <h3>Don Quijote</h3>
@@ -378,6 +390,9 @@
       </article>
 
       <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/m_mallorquina.jpg" alt="La Mallorquina" loading="lazy" onerror="this.style.visibility='hidden';">
+        </div>
         <div class="menu-item-copy">
           <div class="menu-item-head">
             <h3>La Mallorquina</h3>
@@ -389,6 +404,9 @@
       </article>
 
       <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/m_matrimonio.jpg" alt="Matrimonio" loading="lazy" onerror="this.style.visibility='hidden';">
+        </div>
         <div class="menu-item-copy">
           <div class="menu-item-head">
             <h3>Matrimonio</h3>
@@ -476,6 +494,9 @@
       </article>
 
       <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/t_americana.jpg" alt="La Americana" loading="lazy" onerror="this.style.visibility='hidden';">
+        </div>
         <div class="menu-item-copy">
           <div class="menu-item-head">
             <h3>La Americana</h3>
@@ -504,6 +525,9 @@
 
     <div class="menu-grid">
       <article class="menu-item">
+        <div class="menu-thumb">
+          <img src="assets/images/postre_casa.jpg" alt="Postre de la Casa" loading="lazy" onerror="this.style.visibility='hidden';">
+        </div>
         <div class="menu-item-copy">
           <div class="menu-item-head">
             <h3>Postre de la Casa</h3>
@@ -1117,6 +1141,7 @@
         thumb.setAttribute('aria-label', 'Ampliar foto de ' + name);
 
         function openPhoto() {
+          if (!smallPhoto || !smallPhoto.complete || !smallPhoto.naturalWidth) return;
           lastPhotoOpened = thumb;
           largePhoto.src = smallPhoto.src;
           largePhoto.alt = smallPhoto.alt;
